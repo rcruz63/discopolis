@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>Lista de Episodios</title>
+</head>
+<body>
+<h1>Lista de Episodios</h1>
+<label for="year">Filtrar por año:</label>
+<select id="year" onchange="filterEpisodes()">
+<option value="all">Todos</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+</select>
+<label for="month">Filtrar por mes:</label>
+<select id="month" onchange="filterEpisodes()">
+<option value="all">Todos</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+</select>
+<ul id="episodeList">
+<li data-year="2016" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9505-rock-1970-1-simon-garfunkel-black-sabbath-05-10-16/3745448/">Rock 1970 (1): Simon & Garfunkel - Black Sabbath</a></li>
+<li data-year="2016" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9503-1970-2-taste-stone-the-crow-06-10-16/3746714/">1970 (2): Taste, Stone the Crow</a></li>
+<li data-year="2016" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9504-1970-3-syd-barrett-mc5-07-10-16/3748543/">1970 (3): Syd Barrett, MC5</a></li>
+<li data-year="2016" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9508-1970-4-chicago-zappa-10-10-16/3751840/">1970 (4) Chicago - Zappa</a></li>
+<li data-year="2016" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-1970-5-cash-baez-morrison-11-10-16/3753298/">1970 (5): Cash, Baez, Morrison</a></li>
+<li data-year="2016" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9511-1970-6-dylan-nobel-literatura-13-10-16/3755619/">1970 (6) Dylan Nobel Literatura</a></li>
+<li data-year="2016" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9512-1970-7-the-doors-the-beatles-14-10-16/3757144/">1970 (7) The Doors - The Beatles</a></li>
+<li data-year="2016" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9516-1970-8-pink-floyd-jerry-garcia-17-10-16/3760046/">1970 (8) Pink Floyd, Jerry Garcia</a></li>
+<li data-year="2016" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9517-1970-9-van-der-graaf-csny-18-10-16/3761442/">1970 (9) Van der Graaf, CSNY</a></li>
+<li data-year="2016" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9524-1970-10-mountain-leon-russell-24-10-16/3769399/">1970 (10). Mountain, Leon Russell</a></li>
+<li data-year="2016" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9527-1970-11-jimi-hendrix-27-10-16/3775524/">1970 (11) Jimi Hendrix</a></li>
+<li data-year="2016" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9528-ginger-baker-airforce-28-10-16/3777340/">1970 (12) Ginger Baker Airforce</a></li>
+<li data-year="2016" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9532-1970-13-amboy-dukes-joni-mitchell-31-10-16/3780656/">1970 (13) Amboy Dukes, Joni Mitchell</a></li>
+<li data-year="2016" data-month="11"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9533-1970-14-ten-years-after-jethro-tull-01-11-16/3781901/">1970 (14) Ten Years After-Jethro Tull</a></li>
+<li data-year="2016" data-month="11"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9534-1970-15-melanie-cat-stevens-02-11-16/3783187/">1970 (15) Melanie, Cat Stevens 02/11/16</a></li>
+<li data-year="2016" data-month="11"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9535-1970-16-miles-davis-03-11-16/3785062/">1970 (16) Miles Davis</a></li>
+<li data-year="2016" data-month="11"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9540-1970-17-the-beatles-let-it-be-08-11-16/3791258/">1970 (17) The Beatles Let it be</a></li>
+<li data-year="2016" data-month="11"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9555-197018-king-crimson-pmp-restos-21-11-16/3808148/">1970(18) King Crimson - PMP restos</a></li>
+<li data-year="2016" data-month="11"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-221116/3809203/">1970 (19) Eric Burdon War</a></li>
+<li data-year="2016" data-month="11"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9557-1970-20-cream-hot-tuna-23-11-16/3810136/">1970 (20) Cream - Hot Tuna</a></li>
+<li data-year="2016" data-month="11"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9563-1970-21-deep-purple-28-11-16/3814290/">1970 (21) Deep Purple</a></li>
+<li data-year="2016" data-month="11"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9564-1970-22-soft-machine-29-11-16/3815588/">1970 (22) Soft Machine</a></li>
+<li data-year="2016" data-month="11"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9565-1970-23-free-s-tears-30-11-16/3816572/">1970 (23) Free, B S & Tears</a></li>
+<li data-year="2016" data-month="12"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-011216/3817560/">1970 (24) Stooges-Rod Stewart</a></li>
+<li data-year="2016" data-month="12"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9567-1970-25-the-who-live-at-leeds-02-1216/3817563/">1970 (25) The Who Live at Leeds</a></li>
+<li data-year="2016" data-month="12"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9571-1970-26-cactus-creedence-cr-05-12-16/3821187/">1970 (26) Cactus, Creedence C.R.</a></li>
+<li data-year="2016" data-month="12"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9572-1970-27-may-blitz-warhorse-06-12-16/3821957/">1970 (27) May Blitz, Warhorse</a></li>
+<li data-year="2016" data-month="12"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9574-1970-28-humble-pie-traffic-08-12-16/3823677/">1970 (28) Humble Pie - Traffic</a></li>
+<li data-year="2016" data-month="12"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9575-1970-29-supertram-steve-miller-09-12-16/3824539/">1970 (29) Supertram - Steve Miller</a></li>
+<li data-year="2016" data-month="12"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9580-1970-30-canned-heat-13-12-16/3827970/">1970 (30) Canned Heat</a></li>
+<li data-year="2016" data-month="12"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9582-1970-31-hawkwind-15-12-16/3830863/">1970 (31) Hawkwind</a></li>
+<li data-year="2016" data-month="12"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9587-1970-32-judy-collins-19-12-16/3835847/">1970 (32) Judy Collins</a></li>
+<li data-year="2016" data-month="12"><a href="https://www.rtve.es/play/audios/discopolis/discopolis-9588-1970-33-joe-cocker-status-quo-20-12-16/3837178/">1970 (33) Joe Cocker - Status Quo</a></li>
+<li data-year="2016" data-month="12"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9589-1970-34-wight-festival-21-1216/3839078/">1970 (34) Wight Festival I</a></li>
+<li data-year="2016" data-month="12"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9590-1970-35-isle-of-wight-ii-22-12-16/3840461/">1970 (35) Isle of Wight II</a></li>
+<li data-year="2016" data-month="12"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9591-1970-36-festival-wight-23-12-16/3841784/">1970 (36) Festival Wight</a></li>
+<li data-year="2016" data-month="12"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9596-1970-37-the-doors-live-29-12-16/3848412/">1970 (37) The Doors Live</a></li>
+<li data-year="2016" data-month="12"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9597-1970-38-the-doors-live-moody-blues-30-12-16/3849785/">1970 (38) The Doors Live-Moody Blues</a></li>
+<li data-year="2017" data-month="1"><a href="http://www.rtve.es/play/audios/discopolis/170104-discopolis-cohen-2016-12-19t08-53-59650/3835210/">1970 (39) Leonard Cohen en Wight</a></li>
+<li data-year="2017" data-month="1"><a href="https://www.rtve.es/play/audios/discopolis/170106-discopolis-doors-web-2016-12-19t08-53-59650/3835208/">1970 (40) The Doors en Wight</a></li>
+<li data-year="2017" data-month="1"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-1970-41-black-sannath-neil-young-16-01-17/3869582/">1970 (41) Black Sabbath - Neil Young</a></li>
+<li data-year="2017" data-month="1"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-170117/3871182/">1970 (42) Allman Bros</a></li>
+<li data-year="2017" data-month="1"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9621-1970-43-if-supremes-18-01-17/3872976/">1970 (43) If - Supremes</a></li>
+<li data-year="2017" data-month="1"><a href="https://www.rtve.es/play/audios/discopolis/discopolis-9623-1970-44-jesucristo-superstar-20-01-17/3876434/">1970 (44) Jesucristo Superstar</a></li>
+<li data-year="2017" data-month="1"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9617-1970-45-mott-the-hoople-focus-23-01-17/3880285/">1970 (45) Mott the Hoople - Focus</a></li>
+<li data-year="2017" data-month="1"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9629-1970-46-uriah-heep-manfred-mann-25-01-17/3884239/">1970 (46) Uriah Heep-Manfred Mann</a></li>
+<li data-year="2017" data-month="1"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9630-1970-47-jimi-hendrix-wight-26-01-17/3884054/">1970 (47) Jimi Hendrix Wight</a></li>
+<li data-year="2017" data-month="1"><a href="https://www.rtve.es/play/audios/discopolis/discopolis-9631-1970-48-jimi-hendrix-wight-2-27-01-17/3884099/">1970 (48) Jimi Hendrix Wight 2º</a></li>
+<li data-year="2017" data-month="1"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9635-1970-49-john-mayall-30-01-17/3891554/">1970 (49) John Mayall</a></li>
+<li data-year="2017" data-month="1"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9636-1970-50-llena-tu-cabeza-rock-31-01-17/3893278/">1970 (50) Llena tu cabeza de Rock</a></li>
+<li data-year="2017" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9637-1970-51-llena-tu-cabeza-rock-ii-01-02-17/3894986/">1970 (51) Llena tu cabeza de Rock II</a></li>
+<li data-year="2017" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9638-1970-52-cressida-patto-02-02-17/3896812/">1970 (52) Cressida - Patto</a></li>
+<li data-year="2017" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9639-1970-53-super-grupos-atlantic-03-02-17/3898569/">1970 (53) Super Grupos Atlantic</a></li>
+<li data-year="2017" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9644-1970-54-super-groups-polydor-07-02-17/3904585/">1970 (54) Super Groups Polydor</a></li>
+<li data-year="2017" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9645-1970-55-led-zeppelin-zappa-08-02-17/3906332/">1970 (55) Led Zeppelin - Zappa</a></li>
+<li data-year="2017" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9646-1970-56-genesis-09-02-17/3908253/">1970 (56) Genesis</a></li>
+<li data-year="2017" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9647-1970-57-pink-floyd-syd-barrett-10-02-17/3909925/">1970 (57) Pink Floyd</a></li>
+<li data-year="2017" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9651-1970-58-savoy-brown-elton-john-13-02-17/3913458/">1970 (58) Savoy Brown - Elton John</a></li>
+<li data-year="2017" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9652-1970-59-elvis-presley-david-bowie-14-02-17/3914594/">1970 (59) Elvis Presley - David Bowie</a></li>
+<li data-year="2017" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9654-1970-60-grateful-dead-stephen-stills-16-02-17/3917039/">1970 (60) Grateful Dead - Stephen Stills</a></li>
+<li data-year="2017" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9659-1970-62-gentle-giant-20-02-17/3920290/">1970 (62) Gentle Giant</a></li>
+<li data-year="2017" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9660-1970-63-emerson-lake-palmer-21-02-17/3921494/">1970 (63) Emerson, Lake & Palmer</a></li>
+<li data-year="2017" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9662-1970-64-george-harrison-23-02-17/3923698/">1970 (64) George Harrison</a></li>
+<li data-year="2017" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9667-1970-65-jefferson-starship-27-02-17/3927765/">1970 (65) Jefferson Starship</a></li>
+<li data-year="2017" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9668-1970-66-kraftwerk-28-02-17/3928894/">1970 (66) Kraftwerk</a></li>
+<li data-year="2017" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9670-1970-67-derek-dominos-02-03-17/3931487/">1970 (67) Derek & Dominos</a></li>
+<li data-year="2017" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9671-1970-68-plastic-ono-band-john-lennon-03-03-17/3932692/">1970 (68) Plastic Ono Band John Lennon</a></li>
+<li data-year="2017" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9675-1970-69-king-crimson-06-03-17/3935638/">1970 (69) King Crimson</a></li>
+<li data-year="2017" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9676-1970-70-ccr-wishbone-ash-07-03-17/3936815/">1970 (70) CCR - Wishbone Ash</a></li>
+<li data-year="2017" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9677-1970-71-nico-yoko-ono-08-03-17/3937854/">1970 (71) Nico, Yoko Ono</a></li>
+<li data-year="2017" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9678-1970-72-colosseum-if-09-03-17/3938952/">1970 (72) Colosseum - If</a></li>
+<li data-year="2017" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9679-72-ginger-baker-airforce-donovan-10-03-17/3940131/">1970 (73) Ginger Baker Airforce - Donovan</a></li>
+<li data-year="2017" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9682-1970-74-tim-buckley-trex-13-03-17/3942569/">1970 (74) Tim Buckley - T.Rex</a></li>
+<li data-year="2017" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9684-1970-75-black-widow-15-03-17/3944953/">1970 (75) Black Widow</a></li>
+<li data-year="2017" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9685-1970-76-james-brown-16-03-17/3946117/">1970 (76) James Brown</a></li>
+<li data-year="2017" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9686-1970-77-chuck-berry-17-03-17/3947565/">1970 (77) Chuck Berry</a></li>
+<li data-year="2017" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9690-1970-78-eric-burdon-war-20-03-17/3950108/">1970 (78) Eric Burdon War</a></li>
+<li data-year="2017" data-month="4"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9706-1970-79-lucifers-friend-03-04-17/3966528/">1970 (79) Lucifer's Friend</a></li>
+<li data-year="2017" data-month="4"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-070417/3971826/">1970 (80) James Gang</a></li>
+<li data-year="2017" data-month="4"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9714-1970-81-sixto-rodriguez-10-04-17/3974756/">1970 (81) Sixto Rodríguez</a></li>
+<li data-year="2017" data-month="4"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9717-1970-82-caravan-man-ufo-13-04-17/3979241/">1970 (82) Caravan, Man, UFO</a></li>
+<li data-year="2017" data-month="4"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9718-1970-83-2-amon-duul-14-04-17/3979120/">1970 (83) T 2, Amon Düül</a></li>
+<li data-year="2017" data-month="4"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9730-1970-84-bob-seger-system-24-04-17/3992346/">1970 (84) Bob Seger System</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9738-1970-85-kluster-t2-01-05-17/4001780/">1970 (85) Kluster - T2</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9739-1970-y86-high-tide-02-05-17/4003481/">1970 (y86) High Tide</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-030517/4005060/">1970 (87) Fernando Salaberry</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9741-1970-88-maquina-05-05-17/4006451/">1970 (88) Máquina</a></li>
+<li data-year="2017" data-month="9"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9883-1970-89-espana-02-20-09-17/4235568/">1970 89 España 02</a></li>
+<li data-year="2017" data-month="9"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9885-1970-90-brincos-22-09-17/4238085/">1970 (90) Los Brincos</a></li>
+<li data-year="2017" data-month="9"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9889-1970-91-smash-cerebrum-25-09-17/4240302/">1970 (91) Smash - Cerebrum</a></li>
+<li data-year="2017" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9899-1970-92-aguaviva-04-10-17/4248041/">1970 (92) Aguaviva</a></li>
+<li data-year="2017" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9901-1970-93-miguel-rios-canarios-06-10-17/4250368/">1970 (93) Miguel Ríos - Canarios</a></li>
+<li data-year="2017" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9905-1970-94-modulos-09-10-17/4252478/">1970 (94) Módulos</a></li>
+<li data-year="2017" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9906-1970-95-musica-progresiva-espanola-10-10-17/4253899/">1970 (95) Música progresiva española</a></li>
+<li data-year="2017" data-month="10"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9907-1970-96-vainica-doble-11-10-17/4255151/">1970 (96) Vainica Doble</a></li>
+</ul>
+
+<script>
+function filterEpisodes() {
+    var year = document.getElementById('year').value;
+    var month = document.getElementById('month').value;
+    var episodes = document.getElementById('episodeList').getElementsByTagName('li');
+    for (var i = 0; i < episodes.length; i++) {
+        var episodeYear = episodes[i].getAttribute('data-year');
+        var episodeMonth = episodes[i].getAttribute('data-month');
+        if ((year === 'all' || episodeYear === year) && (month === 'all' || episodeMonth === month)) {
+            episodes[i].style.display = '';
+        } else {
+            episodes[i].style.display = 'none';
+        }
+    }
+}
+</script>
+</body>
+</html>

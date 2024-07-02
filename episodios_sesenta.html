@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>Lista de Episodios</title>
+</head>
+<body>
+<h1>Lista de Episodios</h1>
+<label for="year">Filtrar por año:</label>
+<select id="year" onchange="filterEpisodes()">
+<option value="all">Todos</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+</select>
+<label for="month">Filtrar por mes:</label>
+<select id="month" onchange="filterEpisodes()">
+<option value="all">Todos</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+</select>
+<ul id="episodeList">
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9228-sesenta-verdad-01-who-rolling-stones-beach-boys-01-02-16/3466806/">Los sesenta de verdad 01: Who, Rolling Stones, Beach Boys</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9229-sesenta-verdad-02-dylan-zappa-mayallyardbirds-02-02-16/3468642/">Los sesenta de verdad 02: Dylan, Zappa, Mayall,Yardbirds</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9230-sesenta-verdad-032-beatles-donovan-simon-garfunkel-03-02-16/3470224/">Los sesenta de verdad 03: Beatles, Donovan, Simon & Garfunk</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9231-sesenta-verdad-04-troggs-byrds-cream-04-02-16/3472349/">Los sesenta de verdad 04: Troggs, Byrds, Cream</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9232-sesenta-verdad-05-espana-1966-05-02-16/3474759/">Los sesenta de verdad 05: España 1966</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9236-sesenta-verdad-06-doors-who-rolling-stones-08-02-16/3479071/">Los sesenta de verdad 06: Doors, Who, Rolling Stones</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9237-sesenta-verdad-07-jefferson-velvet-ujimi-hendrix-09-02-16/3480460/">Los sesenta de verdad 07</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9238-sesenta-verdad-08-sgtpeppers-lonely-hearts-10-02-16/3481688/">Los sesenta de verdad 08</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-120216/3484620/">Los sesenta de verdad 09</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9245-sesenta-verdad-10-16-02-16/3488878/">Los sesenta de verdad 10</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9246-sesenta-verdad-11-17-02-16/3490255/">Los sesenta de verdad 11</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9247-sesenta-verdad-12-18-02-16/3491607/">Los sesenta de verdad 12</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9248-sesenta-verdad-13-19-02-16/3492796/">Los sesenta de verdad 13</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9252-sesenta-traffic-22-02-16/3496173/">Los sesenta 14: Traffic</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9253-sesenta-15-woody-guthrie-23-02-16/3497627/">Los sesenta 15: Woody Guthrie</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9254-sesenta-16-pasos-iturralde-24-02-16/3498972/">Los sesenta 16: Los Pasos - Iturralde</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9255-sesenta-17-steppenwolf-25-02-16/3500542/">Los sesenta 17: Steppenwolf</a></li>
+<li data-year="2016" data-month="2"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9256-sesenta-18-zappa-mothers-26-02-16/3500302/">Los sesenta 18: Zappa-Mothers</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9261-sesenta-19-blue-cheer-01-03-16/3506267/">Los sesenta 19: Blue Cheer</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9262-sesenta-20-small-faces-hair-02-03-16/3507540/">Los sesenta 20: Small Faces-Hair</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9262-sesenta-21-iron-butterfly-03-03-16/3508914/">Los sesenta 21: Iron Butterfly</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9263-sesenta-22-grateful-dead-04-03-16/3510598/">Los sesenta 22: Grateful Dead</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9274-sesenta-23-vanilla-fudge-14-03-16/3522348/">Los sesenta 23: Vanilla Fudge</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9276-sesenta-24-kooper-15-03-16/3524163/">Los sesenta 24: Al Kooper</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9277-sesenta-25-john-mayall-16-03-16/3525700/">Los sesenta 25: John Mayall</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9278-sesenta-26-canarios-17-03-16/3527444/">Los sesenta 26 Los Canarios</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9278-sesenta-27-ten-years-after-18-03-16/3529426/">Los sesenta 27: Ten Years After</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9283-sesenta-28-chuck-berry-21-03-16/3532822/">Los sesenta 28: Chuck Berry</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9284-sesenta-29-jeff-beck-22-03-16/3534382/">Los sesenta 29: Jeff Beck</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9285-sesenta-30-the-cream-23-03-16/3536461/">Los sesenta 30: The Cream</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9291-sesenta-31-rolling-stones-28-03-16/3542899/">Los sesenta 31 Rolling Stones</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9292-sesenta-jimi-hendrix-29-03-16/3544450/">Los sesenta 32: Jimi Hendrix</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9293-sesenta-33-the-beatles-30-03-16/3545862/">Los sesenta 33: The Beatles</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9294-sesenta-34-van-morrison-31-03-16/3547494/">Los sesenta 34: Van Morrison</a></li>
+<li data-year="2016" data-month="4"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9299-sesenta-36-jethro-tull-04-04-16/3553225/">Los Sesenta 36: Jethro Tull</a></li>
+<li data-year="2016" data-month="4"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9300-sesenta-37-jefferson-airplane-05-04-16/3555298/">Los sesenta 37: Jefferson Airplane</a></li>
+<li data-year="2016" data-month="4"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9319-sesenta-35-eric-burdon-22-04-16/3580706/">Los sesenta 35: Eric Burdon</a></li>
+<li data-year="2016" data-month="4"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9323-sesenta-38-led-zeppelin-25-04-16/3584599/">Los sesenta 38 Led Zeppelin</a></li>
+<li data-year="2016" data-month="4"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9324-sesenta-39-creedence-cr-26-04-16/3586445/">Los sesenta 39: Creedence C.R.</a></li>
+<li data-year="2016" data-month="4"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9324-sesenta-40-bee-gees-27-04-16/3588492/">Los sesenta 40: Bee Gees</a></li>
+<li data-year="2016" data-month="4"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9326-sesenta-41-crosbystills-nash-28-04-16/3590521/">Los sesenta 41: Crosby,Stills & Nash 28/04/16</a></li>
+<li data-year="2016" data-month="4"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9327-sesenta-42-tommy-29-04-16/3592669/">Los sesenta 42: Tommy</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9331-sesenta-43-vanilla-fudge-quicksilver-02-05-16/3595127/">Los sesenta 43: Vanilla Fudge - Quicksilver</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9332-sesenta-44-the-band-03-05-16/3596144/">Los sesenta 44: The Band</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9333-sesenta-45-santana-04-05-16/3596145/">Los sesenta 45 Santana</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9334-sesenta-46-leonard-cohen-blind-faith-05-05-16/3596142/">Los sesenta 46: Leonard Cohen</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9335-sesenta-47-abbey-road-06-05-16/3596153/">Los sesenta 47: Abbey Road</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9338-sesenta-48-taste-frank-zappa-09-05-16/3602385/">Los sesenta 48: Taste - Frank Zappa</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-100516/3603814/">Los sesenta 49: The Chicago Transit Authority</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9340-sesenta-50-sly-family-stone-11-05-16/3604974/">Los sesenta 50 Sly & Family Stone</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9341-sesenta-51-johnny-winter-12-05-16/3606301/">Los sesenta 51: Johnny Winter</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9342-sesenta-52-stooges-doors-13-05-16/3607422/">Los sesenta 52: Stooges - Doors</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9346-sesenta-53-jethro-tull-16-05-16/3609713/">Los sesenta 53: Jethro Tull</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9347-sesenta-54-fleetwood-mac-17-05-16/3611175/">Los Sesenta 54 Fleetwood Mac</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9349-sesenta-55-its-beautiful-day-grand-funk-railroad-19-05-16/3612665/">Los sesenta 55: It's a Beautiful Day y Grand Funk Railroad</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9354-sesenta-56-zappa-king-crimson-23-05-16/3614931/">Los sesenta: 56 Zappa-King Crimson</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9355-sesenta-57-led-zeppelin-ii-24-05-16/3615738/">Los sesenta 57: Led zeppelin II</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9356-sesenta-58-allman-brothers-band-25-05-16/3616470/">Los sesenta 58: Allman Brothers Band</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9357-sesenta-59-colosseum-26-05-16/3617294/">Los sesenta 59: Colosseum</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9358-sesenta-60-rod-stewart-27-05-16/3618427/">Los sesenta 60: Rod Stewart</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9362-sesenta-61-jefferson-airplane-30-05-16/3620256/">Los sesenta 61 Jefferson Airplane</a></li>
+<li data-year="2016" data-month="5"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9363-sesenta-62-the-flock-the-frost-31-05-16/3621310/">Los Sesenta 62: The Flock - The Frost</a></li>
+<li data-year="2016" data-month="6"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9364-sesenta-63-julie-driscoll-01-06-16/3621839/">Los sesenta 63: Julie Driscoll</a></li>
+<li data-year="2016" data-month="6"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9365-sesenta-64-pink-floyd-02-06-16/3621840/">Los sesenta 64: Pink Floyd</a></li>
+<li data-year="2016" data-month="6"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9366-sesenta-65-grateful-dead-live-03-06-16/3621841/">Los Sesenta 65: Grateful Dead Live</a></li>
+<li data-year="2016" data-month="6"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9369-sesenta-66-mayall-amon-duul-06-06-16/3625955/">Los sesenta 66: Mayall-Amon Duul</a></li>
+<li data-year="2016" data-month="6"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9370-sesenta-67-rare-earth-can-07-06-16/3626979/">Los sesenta 67: Rare Earth - Can</a></li>
+<li data-year="2016" data-month="6"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9371-sesenta-68-rolling-stones-08-06-16/3628202/">Los Sesenta 68: Rolling Stones</a></li>
+<li data-year="2016" data-month="6"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9372-sesenta-69-deep-purple-09-06-16/3629389/">Los sesenta 69: Deep Purple</a></li>
+<li data-year="2016" data-month="6"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9373-sesenta-70-van-der-graaf-10-06-16/3630417/">Los Sesenta 70 Van der Graaf G.</a></li>
+<li data-year="2016" data-month="6"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9377-sesenta-y71-deep-purple-orchestra-13-06-16/3632257/">Los Sesenta y71 Deep Purple Orchestra</a></li>
+<li data-year="2016" data-month="6"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9376-sesenta-72-espana-14-06-16/3633766/">Los sesenta 72, España</a></li>
+<li data-year="2016" data-month="6"><a href="http://www.rtve.es/play/audios/discopolis/160615-discopolis-espana-02-2016-06-14t14-29-04717/3633712/">Los sesenta 73 España 2</a></li>
+<li data-year="2016" data-month="6"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9381-sesenta-75-pau-riba-17-06-16/3633714/">Los sesenta y 75 Pau Riba</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9401-sesenta-76-sirex-04-07-16/3653071/">Los sesenta 76: Los Sirex</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9402-sesenta-77-gelu-05-07-16/3653970/">Los sesenta 77: Gelu</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9403-sesenta-78-mustang-06-07-16/3654805/">Los sesenta 78: Los Mustang</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9404-sesenta-79-lone-star-07-07-16/3655731/">Los Sesenta 79: Lone Star</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9405-sesenta-80-lone-star-ii-08-07-16/3656825/">Los sesenta 80: Lone Star II</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9409-sesenta-81-salvajes-11-07-16/3659156/">Los sesenta 81: Los Salvajes</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9410-sesenta-82-salvajes-ii-12-07-16/3660242/">Los sesenta 82: Los Salvajes II</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9411-sesenta-83-cheyenes-13-07-16/3661392/">Los sesenta 83 Los Cheyenes</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9412-sesenta-84-buenos-roller-14-07-16/3662483/">Los sesenta 84: Los Buenos-Los Roller</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9412-sesenta-smash-15-07-16/3663464/">Los sesenta 85: Smash</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-180716/3665590/">Los sesenta 86: Maquina!-Los Grim</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-190716/3666599/">Los sesenta 87: Los Banzos-Los Sprinters</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9417-sesenta-88-lords-shelly-20-07-16/3667477/">Los sesenta 88: Los Lord's, Shelly</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9418-sesenta-89-tara-generacion-49-21-07-16/3668773/">Los sesenta 89: Tara-Generación 49</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9419-sesenta-90-pops-mas-22-07-16/3669980/">Los sesenta 90: Los Pops y más</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9423-sesenta-91-pepes-astros-25-07-16/3672200/">Los sesenta 91 Los Pepes-Los Astros</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9424-sesenta-92-yerba-mate-26-07-16/3673197/">Los sesenta 92 Yerba Mate</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9425-sesenta-93-sisa-generacion-del-68-27-07-16/3674441/">Los sesenta y 93 Sisa-Generación del 68</a></li>
+<li data-year="2016" data-month="8"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9446-sesenta-94-woodstock69-00-15-08-16/3691726/">Los sesenta 94 - Woodstock'69 00</a></li>
+<li data-year="2016" data-month="8"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9446-sesenta-94-woodstock69-00-15-08-16/3691728/">Los sesenta 95 - Woodstock'69 01</a></li>
+<li data-year="2016" data-month="8"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9448-sesenta-96-woodstock69-02-17-08-16/3691727/">Los sesenta 96 - Woodstock'69 02</a></li>
+<li data-year="2016" data-month="8"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9449-sesenta-97-woodstock69-03-18-08-16-escuchar-ahora/3691763/">Los sesenta 97 - Woodstock'69 03</a></li>
+<li data-year="2016" data-month="8"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9450-sesenta-98-woodstock69-04-19-08-16/3691729/">Los sesenta 98 - Woodstock'69 04</a></li>
+<li data-year="2016" data-month="8"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9454-sesenta-99-woodstock69-05-22-08-16/3691730/">Los sesenta 99 - Woodstock'69 05</a></li>
+<li data-year="2016" data-month="8"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9455-sesenta-100-woodstock69-06-23-08-16/3691741/">Los sesenta 100 - Woodstock'69 06</a></li>
+<li data-year="2016" data-month="8"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9456-sesenta-101-woodstock69-07-24-08-16/3691725/">Los sesenta 101 - Woodstock'69 07</a></li>
+<li data-year="2016" data-month="8"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9457-sesenta-102-woodstock69-08-25-08-16/3691740/">Los sesenta 102 - Woodstock'69 08</a></li>
+<li data-year="2016" data-month="8"><a href="http://www.rtve.es/play/audios/discopolis/discopolis-9458-sesenta-103-woodstock69-09-26-08-16/3691732/">Los sesenta 103 - Woodstock'69 09</a></li>
+<li data-year="2016" data-month="8"><a href="http://www.rtve.es/play/audios/discopolis/160829-discopolis-woodstock-10-2016-08-12t09-02-30207/3691738/">Los sesenta 104 - Woodstock'69 10</a></li>
+<li data-year="2016" data-month="8"><a href="https://www.rtve.es/play/audios/discopolis/160830-discopolis-woodstock-11-2016-08-12t09-02-30207/3691742/">Los sesenta 105 - Woodstock'69 11</a></li>
+<li data-year="2016" data-month="8"><a href="https://www.rtve.es/play/audios/discopolis/160831-discopolis-woodstock-12-2016-08-12t09-02-30207/3691724/">Los sesenta 106 - Woodstock'69 12</a></li>
+</ul>
+
+<script>
+function filterEpisodes() {
+    var year = document.getElementById('year').value;
+    var month = document.getElementById('month').value;
+    var episodes = document.getElementById('episodeList').getElementsByTagName('li');
+    for (var i = 0; i < episodes.length; i++) {
+        var episodeYear = episodes[i].getAttribute('data-year');
+        var episodeMonth = episodes[i].getAttribute('data-month');
+        if ((year === 'all' || episodeYear === year) && (month === 'all' || episodeMonth === month)) {
+            episodes[i].style.display = '';
+        } else {
+            episodes[i].style.display = 'none';
+        }
+    }
+}
+</script>
+</body>
+</html>
