@@ -1,0 +1,64 @@
+﻿<html>
+<head>
+<title>Lista de Episodios</title>
+</head>
+<body>
+<h1>Lista de Episodios</h1>
+<label for="year">Filtrar por año:</label>
+<select id="year" onchange="filterEpisodes()">
+<option value="all">Todos</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+</select>
+<label for="month">Filtrar por mes:</label>
+<select id="month" onchange="filterEpisodes()">
+<option value="all">Todos</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+<ul id="episodeList">
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-otras-cosmologias-sonoras-05-05-17/4008052/">Otras cosmologías sonoras - 05/05/17</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-otras-cosmologias-sonoras-08-05-17/4011278/">Otras cosmologías sonoras - 08/05/17</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-otras-cosmologias-sonoras-09-05-07/4012940/">Otras cosmologías sonoras - 09/05/07</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-otras-cosmologias-sonoras-10-05-17/4014603/">Otras cosmologías sonoras - 10/05/17</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-cosmologias-sonoras-12-05-17/4017292/">Cosmologías sonoras - 12/05/17</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-cosmologias-sonoras-15-05-17/4020504/">Cosmologías sonoras - 15/05/17</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-cosmologias-sonoras-16-05-17-16-05-17/4022114/">Cosmologías sonoras - 16/05/17</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-otras-cosmologias-sonoras-17-05-17/4023297/">Otras cosmologías sonoras - 17/05/17</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-otras-cosmologias-sonoras-19-05-17/4026574/">Otras cosmologías sonoras - 19/05/17</a></li>
+</ul>
+
+<script>
+function filterEpisodes() {
+    var year = document.getElementById('year').value;
+    var month = document.getElementById('month').value;
+    var episodes = document.getElementById('episodeList').getElementsByTagName('li');
+    for (var i = 0; i < episodes.length; i++) {
+        var episodeYear = episodes[i].getAttribute('data-year');
+        var episodeMonth = episodes[i].getAttribute('data-month');
+        if ((year === 'all' || episodeYear === year) && (month === 'all' || episodeMonth === month)) {
+            episodes[i].style.display = '';
+        } else {
+            episodes[i].style.display = 'none';
+        }
+    }
+}
+</script>
+</body>
+</html>

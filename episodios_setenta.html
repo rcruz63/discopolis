@@ -1,0 +1,398 @@
+﻿<html>
+<head>
+<title>Lista de Episodios</title>
+</head>
+<body>
+<h1>Lista de Episodios</h1>
+<label for="year">Filtrar por año:</label>
+<select id="year" onchange="filterEpisodes()">
+<option value="all">Todos</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+</select>
+<label for="month">Filtrar por mes:</label>
+<select id="month" onchange="filterEpisodes()">
+<option value="all">Todos</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+<ul id="episodeList">
+<li data-year="2016" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9380-setenta-74-espana-16-06-16/3633724/">Los setenta 74 España</a></li>
+<li data-year="2017" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9920-setentas-01-janis-joplin-zztop-23-10-17/4267207/">Setentas (01) Janis Joplin - ZZTop</a></li>
+<li data-year="2017" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9921-setentas-02-uriah-heep-booker-24-10-17/4269221/">Setentas (02) Uriah Heep - Booker T.</a></li>
+<li data-year="2017" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9922-setentas-03-yes-crazy-horse-25-10-17/4270861/">Setentas (03) Yes - Crazy Horse</a></li>
+<li data-year="2017" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9924-setentas-4-cactus-alice-cooper-27-10-17/4274247/">Setentas (4) Cactus - Alice Cooper</a></li>
+<li data-year="2017" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9928-setentas-5-egg-can-30-10-17/4278282/">Setentas (5) Egg - Can</a></li>
+<li data-year="2017" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9929-setentas-06-chicago-soft-machine-31-10-17/4280369/">Setentas (06) Chicago - Soft Machine</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9930-setentas-07-jimi-hendrix-cohen-01-11-17/4281958/">Setentas (07) Jimi Hendrix - Cohen</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9931-setentas-08-jethro-tull-procol-harum-02-11-17/4283928/">Setentas (08) Jethro Tull - Procol Harum</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9936-setentas-09-vox-dei-sgainsbourg-06-11-17/4291792/">Setentas (09) Vox Dei - S.Gainsbourg 06/11/17</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9937-setentas-10-the-doors-07-11-17/4293461/">Setentas (10) The Doors</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-9938-setentas-11-rolling-stones-08-11-17/4295061/">Setentas (11) Rolling Stones</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9945-setentas-12-caravan-the-nice-14-11-17/4304945/">Setentas (12) Caravan- The Nice</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9946-setentas-13-crosby-stills-nash-young-15-11-17/4306750/">Setentas (13) Crosby, Stills, Nash & Young</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9947-setentas-14-rod-stewart-hot-tuna-16-11-17/4308705/">Setentas (14) Rod Stewart - Hot Tuna</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9948-setentas-15-tarkus-fireball-17-11-17/4310379/">Setentas (15) Tarkus - Fireball</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9963-setentas-16-focus-black-sabbath-20-11-17/4315314/">Setentas (16) Focus - Black Sabbath</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9964-setentas-17-moody-blues-chuck-berry-21-11-17/4317723/">Setentas (17) Moody Blues - Chuck Berry</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9955-setentas-18-pink-floyd-22-11-17/4319948/">Setentas (18) Pink Floyd</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9956-setentas-19-allman-brothers-band-23-11-17/4321134/">Setentas (19) Allman Brothers Band</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9957-setentas-20-little-richard-shaft-24-11-17/4321046/">Setentas (20) Little Richard - Shaft</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9961-setentas-21-whos-next-rex-27-11-17/4321060/">Setentas (21) Who's Next, T. Rex</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9962-22-lennon-imagine-28-11-17/4329976/">Setentas (22) John Lennon, Imagine</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9963-setentas-23-santana-iii-wolf-29-11-17/4321129/">Setentas (23) Santana III, H. Wolf.</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-9964-setentas-24-mahavishnu-orchestra-30-11-17/4321172/">Setentas (24) Mahavishnu Orchestra</a></li>
+<li data-year="2017" data-month="12"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-9965-setentas-25-hendrix-rainbow-bridge-01-12-17/4334603/">Setentas (25) Hendrix, Rainbow Bridge</a></li>
+<li data-year="2017" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9977-setentas-28-sandy-denny-joan-baez-11-12-17/4363123/">Setentas (28) Sandy Denny-Joan Baez</a></li>
+<li data-year="2017" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9978-setentas-29-ten-years-after-heep-mac-12-12-17/4365882/">Setentas (29) Ten Years After-U. Heep-F. Mac</a></li>
+<li data-year="2017" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9979-setentas-30-grand-funk-mountain-faces-13-12-17/4368242/">Setentas (30) Grand Funk, Mountain, Faces</a></li>
+<li data-year="2017" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9980-setentas-31-flamin-groovies-0-mas-14-12-17/4370683/">Setentas (31) Flamin Groovies 0 y más</a></li>
+<li data-year="2017" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9981-setentas-32-rory-gallagher-15-12-17/4373299/">Setentas (32) Rory Gallagher</a></li>
+<li data-year="2017" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9985-setentas-35-wishbone-ash-savoy-brown-18-12-17/4379057/">Setentas (35) Wishbone Ash - Savoy Brown</a></li>
+<li data-year="2017" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9986-setentas-36-acooper-cactus-sly-19-12-17/4381585/">Setentas (36) A.Cooper, Cactus, Sly</a></li>
+<li data-year="2017" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9987-setentas-37-lindisfarne-pete-seeger-20-12-17/4383208/">Setentas (37) Lindisfarne, Pete Seeger</a></li>
+<li data-year="2017" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9988-setentas-38-dylan-blondel-s-span-21-12-17/4385077/">Setentas (38) Dylan, A. Blondel, S. Span</a></li>
+<li data-year="2017" data-month="12"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-9989-setentas-39-traffic-steppenwolf-22-12-17/4384431/">Setentas (39) Traffic, Steppenwolf</a></li>
+<li data-year="2017" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9996-setentas-42-man-28-12-17/4384478/">Setentas (42) Man</a></li>
+<li data-year="2017" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9997-setentas-43-jon-lord-gemini-suite-29-12-17/4384643/">Setentas (43) Jon Lord, Gemini Suite</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10002-setentas-46-bangla-desh-1-02-01-18/4384518/">Setentas (46) Bangla Desh 1</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10003-setentas-46-bangla-desh-y2-03-01-17/4400595/">Setentas (46) Bangla Desh y2</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-10004-setentas-48-genesis-hawkwind-04-01-17/4399234/">Setentas (48) Genesis - Hawkwind</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10008-setentas-51-frank-zappa-mothers-08-01-18/4409015/">Setentas (51) Frank Zappa Mothers</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10010-setentas-52-victor-jara-vgg-09-01-18/4410823/">Setentas (52) Victor Jara - VGG</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10011-setentas-53-faust-tucky-buzzard-gentle-giant-10-01-18/4413069/">Setentas (53) Faust, Tucky Buzzard, Gentle Giant</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10012-setentas-54-osibisa-11-01-18/4415179/">Setentas (54) Osibisa</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10013-setentas-55-fela-kuti-12-01-18/4417158/">Setentas (55). Fela Kuti</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10021-setentas-58-om-jarka-18-01-18/4428090/">Setentas (58) Om - Jarka</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10022-setentas-59-alacran-smash-19-01-17/4429523/">Setentas (59) Alacran - Smash</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10026-setentas-62-modulos-pan-regaliz-22-01-18/4433008/">Setentas (62) Módulos - Pan & Regaliz</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10027-setentas-63-nuestro-pequeno-mundo-23-01-18/4434714/">Setentas (63) Nuestro Pequeño Mundo</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10028-setentas-64-aguaviva-mikaela-24-01-18/4436258/">Setentas (64) Aguaviva - Mikaela</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10029-setentas-65-generacion-mosca-25-01-18/4437741/">Setentas (65) Mi generación - La Mosca</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10030-setentas-66-miguel-rios-pop-tops-26-01-18/4439427/">Setentas (66) Miguel Rios - Pop Tops</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10034-setentas-69-serrat-aceldran-29-01-18/4443825/">Setentas (69) Serrat-A.Celdran</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10035-setentas-70-tabaco-epoca-franklin-30-01-18/4445620/">Setentas (70) Tabaco, Epoca, Franklin...</a></li>
+<li data-year="2018" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10036-setentas71-led-zeppelin-iv-bowie-31-01-18/4448483/">Setentas(71) Led Zeppelin IV - Bowie 31/01/18</a></li>
+<li data-year="2018" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10037-setentas-72-king-crimson-islands-01-02-18/4450948/">Setentas (72) King Crimson: Islands 01/02/18</a></li>
+<li data-year="2018" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10038-setentas-73-elp-cuadros-exposicion-02-02-18/4454839/">Setentas (73) ELP Cuadros de una exposición</a></li>
+<li data-year="2018" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-060318/4507361/">Setentas (84) Jammin Edward - Hendrix</a></li>
+<li data-year="2018" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10076-setentas-85-hendrix-west-war-heroes-07-03-18/4509075/">Setentas (85) Hendrix West & War Heroes</a></li>
+<li data-year="2018" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10078-setentas-86-exile-on-main-street-09-03-18/4512481/">Setentas (86) Exile on Main Street</a></li>
+<li data-year="2018" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10082-setentas-88-machine-head-13-03-18/4519343/">Setentas (88) Machine Head</a></li>
+<li data-year="2018" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10083-setentas-89-scorpions-manassas-14-03-18/4521326/">Setentas (89) Scorpions - Manassas</a></li>
+<li data-year="2018" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10084-setentas-90-wishbone-ash-jeff-beck-15-03-18/4523153/">Setentas (90) Wishbone Ash - Jeff Beck</a></li>
+<li data-year="2018" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10085-setentas-91-jethro-tull-16-03-18/4524800/">Setentas (91) Jethro Tull</a></li>
+<li data-year="2018" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10089-setentas-92-lou-reed-20-03-18/4530463/">Setentas (92) Lou Reed</a></li>
+<li data-year="2018" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10090-setentas-93-david-bowie-21-03-18/4532401/">Setentas (93) David Bowie</a></li>
+<li data-year="2018" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10096-setentas-94-allman-brothers-band-26-03-18/4534171/">Setentas (94) Allman Brothers Band</a></li>
+<li data-year="2018" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10097-setentas-95-king-crimson-27-03-18/4534238/">Setentas (95) King Crimson</a></li>
+<li data-year="2018" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10098-setentas-96-dark-side-of-the-moon-renaissance-28-03-18/4543229/">Setentas (96) Dark Side of the Moon-Renaissance</a></li>
+<li data-year="2018" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10099-setentas-97-janis-joplin-in-concert-29-03-18/4543241/">Setentas (97) Janis Joplin In Concert</a></li>
+<li data-year="2018" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10100-setentas-98-the-cream-live-30-03-18/4543232/">(Setentas 98) The Cream Live</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10104-setentas-99-caravan-chicano-02-04-18/4547913/">Setentas (99). Caravan - El Chicano</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10105-setentas-100-chuck-berry-muddy-waters-03-04-18/4549758/">(Setentas 100) Chuck Berry - Muddy Waters</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10106-setentas-101-zappa-alice-cooper-04-04-18/4551143/">(Setentas 101) Zappa - Alice Cooper</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10107-setentas-102-emerson-lake-palmer-05-04-18/4552450/">(Setentas 102) Emerson, Lake & Palmer</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10108-setentas-103-pink-floyd-06-04-18/4554410/">(Setentas 103) Pink Floyd</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10112-setentas-104-procol-harum-live-09-04-18/4550653/">(Setentas 104 ) Procol Harum Live</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10113-setentas-105-john-yoko-10-04-18/4559265/">Setentas (105) John & Yoko</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10114-setentas-106-aphrodites-child-11-04-18/4561358/">Setentas (106) Aphrodite's Child</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10120-setentas-107-santana-caravanserai-16-04-18/4568274/">Setentas (107) Santana, Caravanserai</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10121-setentas-108-yes-close-to-the-edge-neu-17-04-18/4570157/">Setentas (108) Yes: Close to The Edge - Neu!</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10122-setentas-109-birth-control-sandy-denny-18-04-18/4571682/">Setentas (109) Birth Control -Sandy denny)</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10123-setentas-110-genesis-foxtrot-19-04-18/4573517/">Setentas (110) Genesis: Foxtrot</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10124-setentas-111-focus-iii-20-04-18/4575391/">Setentas (111) Focus III</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10129-setentas-112-black-sabbath-iv-malo-24-04-18/4579944/">Setentas (112) Black Sabbath IV - Malo</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10139-setentas-113-made-in-japan-25-04-18/4581428/">Setentas (113) Made in Japan</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10131-setentas-114-deep-purple-beck-bogert-appice-26-04-18/4582811/">Setentas (114) Deep Purple - Beck, Bogert & Appice 26/04/18</a></li>
+<li data-year="2018" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10132-setentas-115-pink-floyd-christy-moore-27-04-18/4584686/">Setentas 115 Pink Floyd - Christy Moore</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10137-setentas-116-klaus-schulze-01-05-18/4588348/">Setentas (116) Klaus Schulze</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10138-setentas-137-malo-azteca-02-05-18/4589239/">Setentas (137) Malo - Azteca</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10140-setentas-118-jerry-lee-lewis-04-05-18/4591372/">Setentas (118) Jerry Lee Lewis</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10144-setentas-120-tapiman-fusioon-07-05-18/4593997/">Setentas (119) Tapiman - Fusioon</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10145-setentas-120-maquina-directo-08-15-18/4595253/">Setentas (120) Maquina! en directo</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10146-setentas-121-lone-star-09-05-18/4596663/">Setentas (121) Lone Star</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10147-setentas-122-manolo-diaz-peter-roar-10-05-18/4597907/">Setentas (122) Manolo Diaz- Peter Roar</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10148-setentas-123-canarios-vivos-11-05-18/4598815/">Setentas (123) Canarios Vivos!!!!</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10153-setentas-127-modulos-pekenikes-15-05-18/4602212/">Setentas (127) Módulos - Pekenikes</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10154-setentas-126-aguaviva-jordi-soler-16-05-18/4603298/">Setentas (126) Aguaviva - Jordi Soler</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10155-setentas-127-serrat-cecilia-17-05-18/4604605/">Setentas (127) Serrat - Cecilia</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10160-setentas-128-miguel-rios-rock-amor-21-04-18/4608866/">Setentas (128) Miguel Ríos, Rock y Amor</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10161-setentas-129-patxi-andion-lluis-llach-22-05-18/4610074/">Setentas (129) Patxi Andión - Lluis Llach</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10169-setentas-130-alice-cooper-the-stooges-montrose-29-05-18/4612246/">Setentas (130) Alice Cooper, The Stooges, Montrose</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-10170-setentas-131-led-zeppelin-houses-of-the-holly-30-05-18/4612247/">Setentas (131) Led Zeppelin, Houses of The Holly</a></li>
+<li data-year="2018" data-month="5"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-10171-setentas-132-the-who-quadrophenia-31-05-18/4612239/">Setentas (132) The Who: Quadrophenia I</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10172-setentas-133-quadrophenia-y2-camel-01-06-18/4612242/">Setentas (133) Quadrophenia y2 - Camel</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10176-setentas-134-lynyrd-skynyrd-04-06-18/4612216/">Setentas (134) Lynyrd Skynyrd</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10117-setentas-135-king-crimson-05-06-18/4624230/">Setentas (135) King Crimson</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10178-setentas-136-gong-deep-purple-06-06-18/4625310/">Setentas (136) Gong - Deep Purple</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10179-setentas-137-allman-brothers-band-can-07-06-18/4627007/">Setentas (137) Allman Brothers Band - Can</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10180-setentas-138-rick-wakeman-camel-08-06-18/4628313/">Setentas (138) Rick Wakeman - Camel</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10184-setentas-139-roxy-music-11-06-18/4630942/">Setentas (139) Roxy Music</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10185-setentas-140-roxy-music-ii-12-06-18/4632205/">Setentas (140) Roxy Music II</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-10186-setentas-141-elvis-presley-13-06-18/4633430/">Setentas (141). Elvis Presley</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10187-setentas-142-american-graffiti-14-06-18/4634666/">Setentas (142) American Graffiti</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10188-setentas-143-elvis-george-harrison-15-06-18/4635641/">Setentas (143) Elvis-George Harrison</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10192-setentas-144-david-bowie-18-06-18/4637949/">Setentas (144) David Bowie</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10193-setentas-145-lou-reed-berlin-19-09-18/4638814/">Setentas (145) Lou Reed: Berlin 19/09/18</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10194-setentas-146-black-sabbath-haizetara-20-06-18/4639868/">Setentas (146) Black Sabbath - Haizetara</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10195-setentas-147-magma-neu-21-06-18/4641004/">Setentas (147) Magma - Neu</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10196-setentas-148-tubular-bells-22-06-18/4642275/">Setentas (148) Tubular Bells</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10200-setentas-149-santana-welcome-25-06-18/4645098/">Setentas (149) Santana: Welcome</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10201-setentas-150-planxty-25-06-18/4646132/">Setentas (150) Planxty</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10202-setentas-151-chieftains-bob-dylan-27-06-18/4647270/">Setentas (151) Chieftains - Bob Dylan</a></li>
+<li data-year="2018" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10203-setentas-152-genesis-28-06-18/4648330/">Setentas (152) Génesis</a></li>
+<li data-year="2018" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10208-setentas-154-rory-gallagher-area-02-07-18/4652401/">Setentas (154) Rory Gallagher - Area</a></li>
+<li data-year="2018" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10209-setentas-155-lennon-springstreen-gong-03-07-18/4653168/">Setentas (155) Lennon-Springstreen-Gong</a></li>
+<li data-year="2018" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10215-setentas-156-blue-oyster-cult-aerosmith-nazareth-09-07-18/4658565/">Setentas (156) Blue Oyster Cult, Aerosmith, Nazareth</a></li>
+<li data-year="2018" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10216-setentas-157-golden-earring-uriah-heep-granicus-10-07-18/4659651/">Setentas (157) Golden Earring, Uriah Heep, Granicus</a></li>
+<li data-year="2018" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10217-setentas-158-elo-11-07-18/4661077/">Setentas (158) ELO</a></li>
+<li data-year="2018" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10218-setentas-159-hilario-camacho-conexion-12-07-18/4662464/">Setentas (159) Hilario Camacho - Conexión</a></li>
+<li data-year="2018" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10220-setentas-160-lone-star-ovidi-montllor-13-07-18/4663023/">Setentas (160) Lone Star - Ovidi Montllor</a></li>
+<li data-year="2018" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10223-setentas-161-desde-santurce-bilbao-blues-band-16-07-18/4665786/">Setentas (161) Desde Santurce a Bilbao Blues Band</a></li>
+<li data-year="2018" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10224-setentas-162-toti-soler-jordi-sabates-17-07-18/4666772/">Setentas (162) Toti Soler, Jordi Sabates</a></li>
+<li data-year="2018" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10234-setentas-164-aute-rosa-leon-26-07-18/4675302/">Setentas (164) Aute - Rosa Leon</a></li>
+<li data-year="2018" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10239-setentas-165-ricardo-cantalapiedra-cecilia-30-07-18/4678732/">Setentas (165) Ricardo Cantalapiedra - Cecilia</a></li>
+<li data-year="2018" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10240-setentas-166-victor-manuel-patxi-andion-31-07-18/4679918/">Setentas (166) Victor Manuel - Patxi Andion</a></li>
+<li data-year="2018" data-month="8"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-010818/4681266/">Setentas (167) Ismael - Joaquín Diaz</a></li>
+<li data-year="2018" data-month="8"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10242-setentas-168-paco-lucia-manolo-sanlucar-02-08-18/4682375/">Setentas (168) Paco de Lucia - Manolo Sanlúcar</a></li>
+<li data-year="2018" data-month="8"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10247-setentas-169-nmjuglaria-npmundo-06-08-18/4686979/">Setentas (169) N.M.Juglaria - N.P.Mundo</a></li>
+<li data-year="2018" data-month="8"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10258-setentas-171-walter-carlos-20-08-18/4700555/">Setentas (171) Walter Carlos</a></li>
+<li data-year="2018" data-month="8"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10260-setentas-170-walter-carlos-bach-mas-22-08-18/4702941/">Setentas (170) Walter Carlos: Bach y más</a></li>
+<li data-year="2018" data-month="9"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10282-setentas-172-brian-eno-10-09-18/4731102/">Setentas (172) Brian Eno</a></li>
+<li data-year="2018" data-month="9"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10283-setentas-173-bob-dylan-11-09-18/4732546/">Setentas (173) Bob Dylan</a></li>
+<li data-year="2018" data-month="9"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10284-setentas-174-kiss-mick-ronson-12-09-18/4734568/">Setentas (174) Kiss - Mick Ronson</a></li>
+<li data-year="2018" data-month="9"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10285-setenta-175-todd-rundgren-13-09-18/4736603/">Setenta (175) Todd Rundgren</a></li>
+<li data-year="2018" data-month="9"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10286-setentas-176-leslie-west-mountain-live-14-09-18/4738080/">Setentas 176 Leslie West Mountain Live</a></li>
+<li data-year="2018" data-month="9"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10289-setentas-177-hot-tuna-aerosmith-17-09-18/4741726/">Discópolis 10.289 - Setentas (177) Hot Tuna - Aerosmith - 17/09/18</a></li>
+<li data-year="2018" data-month="9"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10290-setentas-178-aretha-franklin-18-09-18/4743420/">Setentas (178) Aretha Franklin</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10305-setentas-178-lou-reed-01-10-18/4766278/">Setentas 178 Lou Reed</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10307-setentas-180-grace-slick-humble-pie-03-10-18/4771403/">Setentas (180) Grace Slick - Humble Pie</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10308-setentas-181-ted-nugent-rush-04-10-18/4774022/">Setentas (181) Ted Nugent - Rush</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10313-setentas-183-king-crimson-starless-08-10-18/4782286/">Setentas (183) King Crimson, Starless</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10313-setentas-184-can-the-residents-09-10-18/4783689/">Setentas (184) Can - The Residents</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10314-setentas-185-horslips-fmarino-10-10-18/4785683/">Setentas (185) Horslips - F.Marino</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10315-setentas-185-kansas-11-10-18/4787385/">Setentas (185) Kansas</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10316-setentas-187-tangerine-dream-phaedra-12-10-18/4788436/">Setentas (187) Tangerine Dream Phaedra</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10322-setentas-190-sweet-17-10-18/4795563/">Setentas (190) Sweet</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10323-setentas-191-bad-co-tom-waits-18-10-18/4797918/">Setentas (191) Bad Co - Tom Waits</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10324-setentas-192-king-crimson-red-19-10-18/4799988/">Setentas (192) King Crimson, Red</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10328-setentas-193-emerson-lake-palmer-live-22-10-18/4806046/">Setentas (193) Emerson, Lake & Palmer Live</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10329-setentas-194-emerson-lake-palmer-live-ii-23-10-18/4807492/">Setentas (194) Emerson, Lake & Palmer Live II</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10332-setentas-195-new-york-dolls-26-10-18/4812346/">Setentas (195) New York Dolls</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10336-setentas-196-ray-manzarek-29-10-18/4816304/">Setentas (196) Ray Manzarek</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10327-setentas-197-eric-burdon-grateful-dead-30-10-18/4817790/">Setentas (197) Eric Burdon - Grateful Dead</a></li>
+<li data-year="2018" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10338-setentas-198-bto-primevil-31-10-18/4819504/">Setentas (198) B.T.O. - Primevil</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10339-setentas-199-bob-dylan-the-band-01-11-18/4820800/">Setentas (199) Bob Dylan & The Band</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10340-setentas-200-bob-dylan-joni-mitchell-02-11-18/4822067/">Setentas (200) Bob Dylan-Joni Mitchell</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10344-setentas-201-deep-purple-05-11-18/4825940/">Setentas (201) Deep Purple</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10348-setentas-202-kraftwerk-hawkwind-09-11-18/4832510/">Setentas (202) Kraftwerk- Hawkwind</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10353-setentas-203-kayak-nektar-montrose-13-11-18/4838103/">Setentas 203 Kayak-Nektar-Montrose</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10354-setentas-204-genesis-the-lamb-14-11-18/4838101/">Setentas (204) Génesis, The Lamb</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10355-setentas-205-lynyrd-skynyrd-15-11-18/4838098/">Setentas (205) Lynyrd Skynyrd</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10356-setentas-206-mott-the-hoople-neil-young-16-11-18/4838107/">Setentas (206) Mott the Hoople - Neil Young</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10360-setentas-207-traffic-19-11-18/4838110/">Setentas (207) Traffic</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/181120-discopolis-setentas-208-2018-11-13t15-04-58053/4838108/">Setentas (208) Santana: Lotus I</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-10362-setentas-209-santana-lotus-ii-21-11-18/4838106/">Setentas (209) Santana Lotus II</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10363-setentas-210-rolling-stones-goats-22-11-18/4838113/">Setentas (210) Rolling Stones: Goat's...</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10364-setentas-211-supetramp-23-11-18/4838099/">Setentas (211) Supetramp</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10367-setentas-212-queen-judas-priest-26-11-18/4838102/">Setentas (212) Queen - Judas Priest</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10368-setentas-213-rick-wakeman-27-11-18/4838109/">Setentas (213) Rick Wakeman</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10369-setentas-214-joan-baez-joni-mitchell-28-11-18/4838077/">Setentas (214) Joan Báez-Joni Mitchell</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10270-setentas-215-jefferson-starship-mountain-29-11-18/4838105/">Setentas (215) Jefferson Starship - Mountain</a></li>
+<li data-year="2018" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10271-setentas-216-west-bruce-laing-mountain-30-11-18/4838100/">Setentas (216) West, Bruce & Laing - Mountain</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10376-setentas-217-scorpions-geordie-04-12-18/4872579/">Setentas (217) Scorpions - Geordie</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10377-setentas-219-henry-cow-john-lennon-05-12-18/4874500/">Setentas (219) Henry Cow - John Lennon 05/12/18</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10378-setentas-220-david-bowie-diamond-dogs-kiss-06-12-18/4876561/">Setentas (220) David Bowie: Diamond Dogs - Kiss</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10379-setentas-220-climax-blues-band-barclay-james-harvest-07-12-18/4878443/">Setentas (220) Climax Blues Band - Barclay James Harvest</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10383-setentas-221-wishbone-ash-thin-lizzy-10-12-18/4883346/">Setentas (221) Wishbone Ash - Thin Lizzy</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10384-setentas-221-bryan-ferry-barry-white-leonard-cohen-11-12-18/4885203/">Setentas (221) Bryan Ferry - Barry White - Leonard Cohen</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10385-setentas-223-gentle-giant-renaissance-12-12-18/4887283/">Setentas (223) Gentle Giant - Renaissance</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10386-setentas-224-electric-light-orchestra-13-12-18/4889447/">Setentas (224) Electric Light Orchestra</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10391-setentas-225-rory-gallagher-irish-tour-17-12-18/4897080/">Setentas (225) Rory Gallagher Irish Tour</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10392-setentas-226-santana-borboletta-jan-akkerman-18-12-18/4899262/">Setentas (226) Santana: Borboletta - Jan Akkerman</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10393-setentas-227-mike-oldfield-hergest-ridge-19-12-18/4901524/">Setentas (227) Mike Oldfield, Hergest Ridge</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10394-setentas-228-caravan-focus-20-12-18/4903798/">Setentas (228) Caravan - Focus</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-10395-setentas-229-focus-robert-wyatt-21-12-18/4903473/">Setentas (229) Focus -Robert Wyatt</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10400-setentas-230-canarios-ciclos-25-12-18/4903466/">Setentas 230 Canarios: Ciclos</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10401-setentas-231-fusioon-canarios-26-12-18/4903467/">Setentas (231) Fusioon - Canarios</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10402-setentas-232-the-storm-alcatraz-27-12-18/4903472/">Setentas (232) The Storm - Alcatraz</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10403-setentas-233-grecas-carmen-28-12-18/4913529/">Setentas (233) Las Grecas - Carmen</a></li>
+<li data-year="2018" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10406-setentas-234-crag-mari-trini-31-12-18/4913522/">Setentas (234) C.R.A.G. - Mari Trini</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-10407-setentas-235-miguel-rios-santabarbara-01-01-19/4913521/">Setentas (235) Miguel Rios - Santabárbara</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-10408-setentas-236-micky-inaki-egana-02-01-19/4913504/">Setentas (236) Micky - Iñaki Egaña</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10409-setentas-237-orquestra-mirasol-tete-montoliu-03-01-19/4913520/">Setentas 237 Orquestra Mirasol-Tete Montoliú</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10410-setentas-238-karina-sherpa-04-01-19/4913500/">Setentas (238) Karina - Sherpa</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-10414-setentas-239-juan-carlos-calderon-jordi-sabates-07-01-19/4913526/">Setentas (239) Juan Carlos Calderón - Jordi Sabatés</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-10415-setentas-240-elkin-nelson-08-01-19/4913530/">Setentas (240) Elkin y Nelson</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10416-setentas-241-aute-serrat-09-01-18/4913503/">Setentas (241) Aute - Serrat</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10417-setentas-242-noel-soto-donna-hightower-10-01-19/4913523/">Setentas (242) Noel Soto - Donna Hightower</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10418-setentas-243-mmbonet-tete-sabates-11-01-19/4934404/">Setentas (243) M.M.Bonet - Tete M.& Sabatés</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10420-setentas-244-paco-ibanez-jose-meneses-14-01-19/4939143/">Setentas (244) Paco Ibáñez - José Meneses</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10421-setentas-245-benito-lertxundi-mikel-laboa-15-01-19/4939784/">Setentas (245) Benito Lertxundi - Mikel Laboa</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10424-setentas-246-labordeta-xavier-lete-patxi-andion-16-01-18/4941053/">Setentas (246) Labordeta-Xavier Lete-Patxi Andion</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10426-setentas-247-pi-serra-llach-montllor-18-01-19/4942157/">Setentas (247) Pi de la Serra-Llach-Montllor</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10430-setentas-248-prada-raimon-v-manuel-21-01-19/4946683/">Setentas (248) A. Prada - Raimon- V. Manuel</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10431-setentas-249-gmotta-nfeliu-nina-monjas-22-01-19/4948078/">Setentas (249) G.Motta-N.Feliú-Niña Monjas</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10438-setentas-250-bruce-springsteen-kiss-28-01-19/4955330/">Setentas (250) Bruce Springsteen - Kiss</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10439-setentas-251-ted-nugent-neil-young-29-01-19/4957102/">Setentas (251) Ted Nugent - Neil Young</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10440-setentas-252-pink-floyd-wish-you-were-here-30-01-19/4959339/">Setentas (252) Pink Floyd: Wish You Were Here</a></li>
+<li data-year="2019" data-month="1"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10441-setentas-253-aerosmih-tangerine-dream-31-01-19/4961053/">Setentas (253) Aerosmih - Tangerine Dream</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10442-setentas-254-queen-night-at-the-opera-01-02-19/4962806/">Setentas (254) Queen: A Night at the Ópera</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10446-setentas-255-bob-dylan-blood-on-the-tracks-04-02-19/4967493/">Setentas (255) Bob Dylan: Blood on the Tracks</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10447-setentas-256-dr-feelgood-rush-05-02-19/4969299/">Setentas (256) Dr. Feelgood - Rush</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10448-setentas-257-ac-dc-john-lennon-06-02-19/4971089/">Setentas (257) AC/DC - John Lennon</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10449-setentas-258-john-lennon-david-bowie-07-02-19/4973272/">Setentas (258) John Lennon - David Bowie</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10450-setentas-259-eric-clapton-was-here-08-02-19/4975449/">Setentas (259) Eric Clapton, Was Here</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10454-setentas-260-king-crimson-usa-11-02-19/4980360/">Setentas (260) King Crimson: USA</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10455-setentas-261-led-zeppelin-physical-graffiti-12-02-19/4982554/">Setentas (261) Led Zeppelin: Physical Graffiti</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10456-setentas-262-frank-zappa-led-zeppelin-13-02-19/4985197/">Setentas (262) Frank Zappa - Led Zeppelin</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10457-setentas-263-rick-wakeman-14-02-19/4987282/">Setentas (263) Rick Wakeman)</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10461-setentas-264-allman-brothers-band-18-02-19/4987157/">Setentas (264) Allman Brothers Band</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10462-setentas-265-bto-bad-company-19-02-19/5002261/">Setentas (265) B.T.O. - Bad Company</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10463-setentas-266-lou-reed-live-status-quo-20-02-19/4987298/">Setentas (266) Lou Reed Live -Status Quo</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10464-setentas-267-steve-hillage-journey-21-02-19/5002864/">Setentas (267) Steve Hillage - Journey</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10465-setentas-268-jeff-beck-blow-by-blow-22-02-19/4987284/">Setentas (268) Jeff Beck: Blow by Blow</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10469-setentas-269-10cc-black-sabbath-25-02-19/5013837/">Setentas (269) 10cc - Black Sabbath</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10470-setentas-270-grateful-dead-26-02-19/5016683/">Setentas (270) Grateful Dead</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10472-setentas-271-hot-tuna-27-02-19/5019223/">Setentas (271) Hot Tuna</a></li>
+<li data-year="2019" data-month="2"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10473-setentas-272-kraftwerk-kraan-28-02-19/5022219/">Setentas (272) Kraftwerk - Kraan</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10474-setentas-273-stephen-stills-01-03-19/5024965/">Setentas (273) Stephen Stills</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10477-setentas-274-journey-jefferson-starship-hot-tuna-04-03-19/5033000/">Setentas (274) Journey - Jefferson Starship - Hot Tuna</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10478-setentas-275-alice-cooper-05-03-19/5035439/">Setentas (275) Alice Cooper</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10479-setentas-276-eric-clapton-06-03-19/5037954/">Setentas (276) Eric Clapton</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10480-setentas-277-neil-young-montrose-07-03-19/5040551/">Setentas (277) Neil Young - Montrose</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10483-setentas-278-fela-kuti-11-03-19/5051038/">Setentas (278) Fela Kuti</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10484-setentas-279-patti-smith-12-03-19/5039859/">Setentas (279) Patti Smith</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10485-setentas-280-chuck-berry-todd-rundgren-13-03-19/5039844/">Setentas (280) Chuck Berry - Todd Rundgren</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10487-setentas-281-todd-rundgren-14-03-19/5039842/">Setentas (281) Todd Rundgren</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10488-setentas-282-kansas-15-03-19/5039860/">Setentas (282) Kansas</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10492-setentas-283-soft-machine-18-03-19/5062244/">Setentas (283) Soft Machine</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10493-setentas-284-hatfield-the-north-19-03-19/5062242/">Setentas (284) Hatfield & the North</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10494-setentas-285-rick-wakeman-lisztomania-tangerine-dream-ricochet-20-03-19/5062241/">Setentas (285) Rick Wakeman: Lisztomania - Tangerine Dream</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10495-setentas-286-rush-caress-of-steel-21-03-19/5062259/">Setentas (286) Rush: Caress of Steel</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10496-setentas-287-camel-22-03-19/5062238/">Setentas (287) Camel</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10500-setentas-288-elf-eagles-steely-dan-25-03-19/5089980/">Setentas (288) Elf - Eagles - Steely Dan</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10501-setentas-289-fairport-convention-peter-frampton-26-03-19/5094469/">Setentas (289) Fairport Convention - Peter Frampton</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10502-setentas-290-jethro-tull-minstrel-in-the-gallery-27-03-19/5097449/">Setentas (290) Jethro Tull: Minstrel in the gallery</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10503-setentas-291-zzebra-28-03-19/5099919/">Setentas (291) Zzebra</a></li>
+<li data-year="2019" data-month="3"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-10504-setentas-292-neu-vangelis-29-03-19/5099901/">Setentas (292) Neu! - Vangelis</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10508-setentas-293-perigeo-01-04-19/5110787/">Setentas (293) Perigeo</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10509-setentas-294-henry-cow-slap-happy-02-04-19/5099822/">Setentas (294) Henry Cow - Slap Happy</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10510-setentas-295-arlo-guthire-pete-seeger-in-concert-03-04-19/5099900/">Setentas (295) Arlo Guthire & Pete Seeger: In Concert</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10511-setentas-296-roger-glover-the-butterfly-ball-04-04-19/5099826/">Setentas (296) Roger Glover: The Butterfly Ball...</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10512-setentas-297-mike-oldfield-ommadawn-roxy-music-siren-05-04-19/5099828/">Setentas (297) Mike Oldfield, Ommadawn - Roxy Music, Siren</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10516-setentas-298-tom-waits-nighthawks-08-04-19/5128276/">Setentas (298) Tom Waits, Nighthawks...</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10517-setentas-299-camel-snow-goose-version-1975-doctor-09-04-19/5130997/">Setentas (299) Camel, Snow Goose versión 1975 - Doctor</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10518-setentas-300-steeleye-span-10-04-19/5099827/">Setentas (300) Steeleye Span</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10519-setentas-301-crack-the-sky-supertramp-11-04-19/5118178/">Setentas (301) Crack the Sky - Supertramp</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10520-setentas-302-doctor-feelgood-thin-lizzy-12-04-19/5118162/">Setentas (302) Doctor Feelgood - Thin Lizzy</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10524-setentas-303-rod-stewart-15-04-19/5118179/">Setentas (303) Rod Stewart</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10525-setentas-304-renaissance-strawbs-16-04-19/5118181/">Setentas (304) Renaissance - Strawbs</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10526-setentas-305-ufo-budgie-17-04-19/5118163/">Setentas (305) UFO - Budgie</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/190418-discopolis-setentas-306-2019-04-11t10-36-53497/5134672/">Setentas (306) Rory Gallagher - Badfinger</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10528-setentas-307-klaus-schulze-timewind-19-04-19/5134679/">Setentas (307) Klaus Schulze: Timewind 19/04/19</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10532-setentas-308-wings-big-star-22-04-19/5134678/">Setentas (308) Wings - Big Star</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10533-setentas-309-gwendal-focus-23-04-19/5134668/">Setentas (309) Gwendal - Focus</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10534-setentas-310-van-der-graaf-generator-tommy-bolin-24-04-19/5134670/">Setentas (310) Van der Graaf Generator - Tommy Bolin</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10535-setenta-311-john-fogerty-flying-burrito-little-feat-25-04-19/5134669/">Setentas (311) John Fogerty - Flying Burrito - Little Feat</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10539-setentas-312-eloy-the-sweet-live-29-04-19/5171801/">Setentas (312) Eloy - The Sweet live</a></li>
+<li data-year="2019" data-month="4"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10540-setentas-313-nazareth-pfm-30-04-19/5173785/">Setentas (313) Nazareth - P.F.M.</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10541-setentas-314-premiata-forneria-marconi-ian-carr-nucleus-01-05-19/5175998/">Setentas (314) Premiata Forneria Marconi - Ian Carr Nucleus</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10542-setentas-315-man-02-05-19/5177396/">Setentas (315) Man</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10543-setentas-316-manfred-manns-earth-band-james-brown-03-05-19/5179441/">Setentas (316) Manfred Mann's Earth Band - James Brown</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10547-setentas-317-joan-baez-joni-mitchell-06-05-19/5184520/">Setentas (317) Joan Baez - Joni Mitchell</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10548-setentas-318-janis-ian-buffy-saint-marie-07-05-19/5186799/">Setentas (318) Janis Ian - Buffy Saint Marie</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10549-setentas-319-robin-trower-08-05-19/5188673/">Setentas (319) Robin Trower</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10550-setentas-320-steve-hackett-trees-09-05-19/5190750/">Setentas (320) Steve Hackett - Trees</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10551-setentas-321-hawkwind-jade-warrior-10-05-19/5192658/">Setentas (321) Hawkwind - Jade Warrior</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10555-setentas-322-jade-warrior-kevin-ayers-13-05-19/5190091/">Setentas (322) Jade Warrior - Kevin Ayers</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10556-setentas-323-frank-marino-roy-buchanan-14-05-19/5190095/">Setentas (323) Frank Marino - Roy Buchanan</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10557-setentas-324-quintessence-15-05-19/5190104/">Setentas (324) Quintessence</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10562-setentas-325-blues-project-pearls-before-swine-20-05-19/5214342/">Setentas (325) Blues Project - Pearls Before Swine</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10563-setentas-326-julie-tippetts-ovary-lodge-21-05-19/5214322/">Setentas (326) Julie Tippetts - Ovary Lodge</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10564-setentas-327-roy-harper-comus-juka-tolonen-22-05-19/5214321/">Setentas (327) Roy Harper - Comus - Juka Tolonen</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10565-setentas-328-stevie-wonder-23-05-19/5214324/">Setentas (328) Stevie Wonder</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10566-setentas-329-marvin-gaye-temptations-incredible-bongo-band-24-05-19/5214325/">Setentas (329) Marvin Gaye - Temptations - Incredible Bongo</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10570-setentas-330-bob-dylan-27-05-19/5214323/">Setentas (330) Bob Dylan 27/05/19</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10571-setentas-331-sabicas-joe-beck-28-05-19/5246422/">Setentas 331 Sabicas con Joe Beck</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10572-setentas-332-sabicas-mike-deasy-29-05-19/5249143/">Setentas 332 Sabicas con Mike Deasy</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-300519/5251464/">Setentas 333 John Berberian</a></li>
+<li data-year="2019" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10574-setentas-334-espana-01-triana-31-05-19/5251021/">Setentas 334 España 01 Triana</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10577-setentas-335-espana-02-goma-agamenon-03-06-19/5250996/">Setentas 335 España 02 Goma - Agamenon</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10578-setentas-336-espana-03-iceberg-barcelona-traction-04-06-19/5251038/">Setentas 336 España 03 Iceberg - Barcelona Traction</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-10579-setentas-337-espana-04-dharma-errobi-05-06-19/5250993/">Setentas 337 España 04 Dharma - Errobi</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10580-setentas-338-espana-05-vainica-doble-errobi-06-06-19/5264623/">Setentas 338 España 05 Vainica Doble - Errobi</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10581-setentas-339-espana-06-tilburi-atila-07-06-19/5266633/">Setentas 339 España 06 Tilburi - Atila</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10585-setentas-340-eduardo-bort-10-06-19/5271798/">Setentas 340 Eduardo Bort</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10586-setentas-341-granada-viva-rollo-11-06-19/5273755/">Setentas 341 Granada - viva el Rollo</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10587-setentas-342-gualberto-12-06-19/5276290/">Setentas 342 Gualberto</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-130619/5278351/">Setentas 343 Jose Luis de Carlos</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10589-setentas-344-fusioon-pekenikes-14-06-19/5280727/">Setentas 344 Fusioon - Pekenikes</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10593-setentas-345-lole-manuel-chorbos-17-06-19/5284595/">Setentas 345 Lole y Manuel - Chorbos</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10594-setentas-346-jordi-sabates-toti-soler-18-06-19/5285834/">Setentas 346 Jordi Sabatés - Toti Soler</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10595-setentas-347-toti-soler-smash-bayuncos-chorbos-19-06-19/5287284/">Setentas 347 Toti Soler - Smash - Bayuncos - Chorbos</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10597-setentas-348-noel-soto-micky-21-06-19/5290075/">Setentas 348 Noel Soto - Micky</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10601-setentas-349-aguaviva-hilario-camacho-24-06-19/5295408/">Setentas 349 Aguaviva - Hilario Camacho</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10603-setentas-350-orquestra-mirasol-26-06-19/5299725/">Setentas 350 Orquestra Mirasol</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10604-setentas-351-jaume-sisa-luis-aguile-27-06-19/5302570/">Setentas 351 Jaume Sisa - Luis Aguilé</a></li>
+<li data-year="2019" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10605-setentas-352-massiel-jeanette-28-06-19/5305139/">Setentas 352 Massiel - Jeanette</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10609-setentas-353-pedro-ruy-blas-donna-hightower-01-07-19/5309328/">Setentas 353 Pedro Ruy-Blas - Donna Hightower</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10610-setentas-354-pau-riba-barrabas-02-07-19/5310068/">Setentas 354 Pau Riba - Barrabás</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10612-setentas-355-desmadre-75-cecilia-04-07-19/5310081/">Setentas 355 Desmadre 75 - Cecilia</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10618-setentas-356-claudina-alberto-gambino-09-07-19/5328925/">Setentas 356 Claudina y Alberto Gambino</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10620-setentas-357-quintin-cabrera-isabel-angel-parra-11-07-19/5333310/">Setentas 357 Quintin Cabrera - Isabel & Angel Parra</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10621-setentas-358-cantata-santa-maria-iquique-12-07-19/5335318/">Setentas 358 Cantata de Santa María de Iquique</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10624-setentas-359-nuestro-pequeno-mundo-madronal-15-07-19/5341024/">Setentas 359 Nuestro Pequeño Mundo - Madroñal</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10625-setentas-360-nuevo-mester-juglaria-vino-tinto-16-07-19/5343140/">Setentas 360 Nuevo Mester de Juglaría - Vino Tinto</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10626-setentas-361-sabandenos-17-07-19/5345031/">Setentas 361 Los Sabandeños</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10627-setentas-362-tall-carcoma-18-07-19/5346764/">Setentas 362 Al Tall - Carcoma</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10628-setentas-363-enrique-morente-jarcha-19-07-19/5348516/">Setentas 363 Enrique Morente - Jarcha</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10632-setentas-364-adolfo-celdran-pablo-guerrero-22-07-19/5342478/">Setentas 364 Adolfo Celdrán - Pablo Guerrero</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10633-setentas-365-luis-pastor-gorka-knrr-humet-23-07-19/5354727/">Setentas 365 Luis Pastor - Gorka Knörr - Humet</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10634-setentas-366-rosa-leon-joan-isaac-24-07-19/5355330/">Setentas 366 Rosa León - Joan Isaac</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10635-setentas-367-luis-batallan-amancio-prada-25-07-19/5356009/">Setentas 367 Luis E. Batallan - Amancio Prada</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10636-setentas-368-serrat-julia-leon-26-07-19/5356649/">Setentas 368 Serrat - Julia León</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10639-setentas-369-vmanuel-dolors-laffitte-ramon-muntaner-29-07-19/5357850/">Setentas 369 V.Manuel - Dolors Laffitte - Ramón Muntaner</a></li>
+<li data-year="2019" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10641-setentas-370-patxi-andion-jesucristo-superstar-31-07-19/5359009/">Setentas 370 Patxi Andion - Jesucristo Superstar</a></li>
+<li data-year="2019" data-month="8"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10642-setentas-371-jesucristo-superstar-parte-segunda-01-08-19/5359587/">Setentas 371 Jesucristo Superstar, parte segunda</a></li>
+<li data-year="2019" data-month="8"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10644-setentas-372-benito-lertxundi-pere-tapias-02-08-19/5360078/">Setentas 372 Benito Lertxundi - Pere Tapias</a></li>
+<li data-year="2019" data-month="8"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10648-setentas-373-mdel-mar-bonet-ovidi-montllor-05-08-19/5360076/">Setentas 373 M.del Mar Bonet - Ovidi Montllor</a></li>
+<li data-year="2019" data-month="8"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10649-setentas-y374-miguel-rios-tartessos-06-08-19/5361838/">Setentas y374 Miguel Rios - Tartessos</a></li>
+<li data-year="2021" data-month="6"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/11341-setentas-375-labordeta-08-06-21/5931494/">11.341: Setentas y 375 Labordeta</a></li>
+</ul>
+
+<script>
+function filterEpisodes() {
+    var year = document.getElementById('year').value;
+    var month = document.getElementById('month').value;
+    var episodes = document.getElementById('episodeList').getElementsByTagName('li');
+    for (var i = 0; i < episodes.length; i++) {
+        var episodeYear = episodes[i].getAttribute('data-year');
+        var episodeMonth = episodes[i].getAttribute('data-month');
+        if ((year === 'all' || episodeYear === year) && (month === 'all' || episodeMonth === month)) {
+            episodes[i].style.display = '';
+        } else {
+            episodes[i].style.display = 'none';
+        }
+    }
+}
+</script>
+</body>
+</html>

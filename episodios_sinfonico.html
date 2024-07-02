@@ -1,0 +1,132 @@
+﻿<html>
+<head>
+<title>Lista de Episodios</title>
+</head>
+<body>
+<h1>Lista de Episodios</h1>
+<label for="year">Filtrar por año:</label>
+<select id="year" onchange="filterEpisodes()">
+<option value="all">Todos</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+</select>
+<label for="month">Filtrar por mes:</label>
+<select id="month" onchange="filterEpisodes()">
+<option value="all">Todos</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+<ul id="episodeList">
+<li data-year="2016" data-month="3"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9268-rock-sinfonico-77-king-crimson-08-03-16/3514929/">Rock Sinfónico 77: King Crimson</a></li>
+<li data-year="2016" data-month="8"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9441-rock-sinfonico-78-11-08-16/3690866/">Rock sinfónico 78</a></li>
+<li data-year="2016" data-month="8"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9442-rock-sinfonico-79-12-08-16/3692118/">Rock Sinfónico 79: E,L & P.</a></li>
+<li data-year="2016" data-month="9"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/160915-discopolis-roger-waters-01-2016-08-12t09-02-30207/3691736/">Rock Sinfónico 80: Roger Waters 1ª</a></li>
+<li data-year="2016" data-month="9"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/160916-discopolis-roger-waters-02-2016-08-12t09-02-30207/3691749/">Rock Sinfónico 81: Roger Waters 2ª</a></li>
+<li data-year="2016" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9542-rock-sinfonico-82-jon-lord-yecla-10-11-16/3794503/">Rock Sinfónico 82 Jon Lord Yecla</a></li>
+<li data-year="2016" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9543-rock-sinfonico-83-jon-lord-yecla-11-11-16/3796483/">Rock Sinfónico 83 Jon Lord Yecla</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9743-rock-sinfonico-01-the-nice-22-05-17/4031665/">Rock Sinfónico 01 The Nice</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9744-rock-sinfonico-02-pete-sinfield-23-05-17/4033507/">Rock Sinfónico 02 Pete Sinfield</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9745-rock-sinfonico-03-can-focus-yes-24-05-17/4034857/">Rock Sinfónico 03 Can, Focus, Yes</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9746-rock-sinfonico-04-argent-genesis-25-05-17/4036439/">Rock Sinfónico 04 Argent-Genesis</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9747-rock-sinfonico-05-kcrimson-26-05-17/4037596/">Rock Sinfónico 05 K.Crimson</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9764-rock-sinfonico-06-orme-29-05-17/4039879/">Rock Sinfónico 06 Le Orme</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9765-rock-sinfonico-07-30-05-17/4041364/">Rock Sinfónico 07</a></li>
+<li data-year="2017" data-month="5"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9766-rock-sinfonico-08-zappa-canarios-31-05-17/4042752/">Rock Sinfónico 08 Zappa-Canarios</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9767-rock-sinfonico-09-steven-wilson-birth-control-01-06-17/4044152/">Rock Sinfónico 09 Steven Wilson</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-020617/4046167/">Rock Sinfónico 10 Colosseum</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9771-rock-sinfonico-11-pendragon-05-06-17/4051519/">Rock Sinfónico 11 Pendragon</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9772-rock-sinfonico-12-procol-harum-06-06-17/4053233/">Rock sinfónico 12 Procol Harum</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9773-rock-sinfonico-13-jethro-tull-07-06-17/4054889/">Rock sinfónico 13 Jethro Tull</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9774-rock-sinfonico-14-new-trolls-08-06-17/4056646/">Rock Sinfónico 14 New Trolls</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9775-rock-sinfonico-15-think-floyd-09-06-17/4058897/">Rock Sinfónico 15 Think Floyd</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9779-rock-sinfonico-16-uriah-heep-12-06-17/4061830/">Rock Sinfónico 16 Uriah Heep</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9780-rock-sinfonico-17-13-06-17/4063518/">Rock sinfónico 17</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9781-rock-sinfonico-18-nigel-kennedy-14-06-17/4065200/">Rock sinfónico 18 Nigel Kennedy</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9782-rock-sinfonico-19-transatlantic-15-06-17/4066233/">Rock sinfónico 19 Transatlantic 15/06/17</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9783-rock-sinfonico-20-kotebel-16-06-17/4068065/">Rock sinfónico 20 Kotebel</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9787-rock-sinfonico-21-zenit-19-06-17/4071091/">Rock Sinfónico 21 Zenit</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9788-rock-sinfonico-the-pineapple-thief-22-20-06-17/4072503/">Rock Sinfónico The Pineapple Thief 22</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9789-rock-sinfonico-23-iman-califato-21-06-17/4074149/">Rock sinfónico 23 Iman Califato I.</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9790-rock-sinfonico-24-king-crimson-22-06-17/4075444/">Rock Sinfónico 24 King Crimson</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9791-rock-sinfonico-25-the-moody-blues-23-06-17/4077580/">Rock sinfónico 25 The Moody Blues</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-8792-rock-sinfonico-26-vanilla-fudge-26-06-17/4077103/">Rock Sinfónico 26 Vanilla Fudge</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9796-rock-sinfonico-27-soft-machine-27-07-17/4077379/">Rock sinfónico 27 Soft Machine</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9794-rock-sinfonico-28-ars-nova-28-06-17/4086780/">Rock sinfónico 28 Ars Nova</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9795-rock-sinfonico-29-tangerine-dream-29-06-17/4086801/">Rock sinfónico 29 Tangerine Dream</a></li>
+<li data-year="2017" data-month="6"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9796-rock-sinfonico-30-neal-morse-30-06-17/4086791/">Rock sinfónico 30 Neal Morse</a></li>
+<li data-year="2017" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9800-rock-sinfonico-31-flower-kings-03-07-17/4095361/">Rock Sinfónico 31 Flower Kings</a></li>
+<li data-year="2017" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9801-rock-sinfonico-32-caravan-04-07-17/4097172/">Rock Sinfónico 32 Caravan</a></li>
+<li data-year="2017" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9802-rock-sinfonico-33-after-crying-05-07-17/4096995/">Rock Sinfónico 33 After Crying</a></li>
+<li data-year="2017" data-month="7"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-9803-rock-sinfonico-34-the-pineapple-thief-06-07-17/4097038/">Rock Sinfónico 34 The Pineapple Thief</a></li>
+<li data-year="2017" data-month="7"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-9804-rock-sinfonico-35-greg-lake-07-07-17/4101878/">Rock Sinfónico 35 Greg Lake</a></li>
+<li data-year="2017" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9800-rock-sinfonico-36-fermata-10-07-17/4101925/">Rock Sinfónico 36 Fermata</a></li>
+<li data-year="2017" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/170711-discopolis-rock-sinfonico-37-2017-07-07t10-40-08643/4101855/">Rock sinfónico 37</a></li>
+<li data-year="2017" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9810-rock-sinfonico-38-the-nice-12-07-17/4101854/">Rock Sinfónico 38 -The Nice</a></li>
+<li data-year="2017" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9811-rock-sinfonico-39-solaris-13-07-17/4111913/">Rock sinfónico 39 Solaris</a></li>
+<li data-year="2017" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9812-rock-sinfonico-40-flaming-lips-14-07-17/4111945/">Rock Sinfónico 40 Flaming Lips</a></li>
+<li data-year="2017" data-month="7"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-9814-rock-sinfonico-41-pink-floyd-sin-ellos-17-07-17/4115423/">Rock Sinfónico 41 Pink Floyd sin ellos</a></li>
+<li data-year="2017" data-month="7"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-9815-rock-sinfonico-42-rusos-18-07-17/4111914/">Rock Sinfónico 42 Rusos</a></li>
+<li data-year="2017" data-month="7"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9816-rock-sinfonico-43-mas-rusos-19-07-17/4115422/">Rock Sinfónico 43 Mas rusos</a></li>
+<li data-year="2017" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-9932-rock-sinfonico-86-libro-eduardo-saluena-03-11-17/4285864/">Rock Sinfónico 86 Libro Eduardo Salueña</a></li>
+<li data-year="2019" data-month="9"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10685-rock-sinfonico-87-10-09-19/5360184/">Rock Sinfónico 87</a></li>
+<li data-year="2019" data-month="9"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10706-rock-sinfonico-88-neal-morse-30-09-19/5398857/">10.706: Rock Sinfónico 88 Neal Morse</a></li>
+<li data-year="2019" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10707-rock-sinfonico-89-izz-01-10-19/5399677/">10.707:  Rock Sinfónico 89 IZZ</a></li>
+<li data-year="2019" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10708-rock-sinfonico-90-pineapple-thief-02-10-19/5400467/">10.708: Rock sinfónico 90 Pineapple Thief</a></li>
+<li data-year="2019" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10709-rock-sinfonico-91-kinetic-element-03-10-19/5401265/">10.709: Rock sinfónico 91 Kinetic Element</a></li>
+<li data-year="2019" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-071019/5403525/">10.714: Rock Sinfónico 92 Different Light</a></li>
+<li data-year="2019" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10716-rock-sinfonico-93-flying-colours-09-10-19/5406165/">10.716: Rock sinfónico 93 Flying Colours</a></li>
+<li data-year="2019" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10717-rock-sinfonico-94-chasin-the-monsoon-10-10-19/5407019/">10.745: Rock sinfónico 94 Chasin the Monsoon</a></li>
+<li data-year="2019" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10718-rock-sinfonico-95-bloque-11-10-19/5407899/">10.718: Rock sinfónico 95: Bloque</a></li>
+<li data-year="2019" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10722-rock-sinfonico-96-magic-pie-14-10-19/5409720/">10.722: Rock sinfónico 96: Magic Pie</a></li>
+<li data-year="2019" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10723-rock-sinfonico-97-electric-asturias-15-10-19/5410698/">10.723: Rock sinfónico 97 Electric Asturias</a></li>
+<li data-year="2019" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10724-rock-sinfonico-98-dream-theater-16-10-19/5411984/">10.724 Rock Sinfónico 98 Dream Theater</a></li>
+<li data-year="2019" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10726-rock-sinfonico-99-bloque-2-18-10-19/5414712/">10.726: Rock Sinfónico 99 Bloque 2</a></li>
+<li data-year="2019" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10734-rock-sinfonico-100-bloque-y3-25-10-19/5423088/">10.734: Rock Sinfónico 100: Bloque y3</a></li>
+<li data-year="2019" data-month="10"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10739-rock-sinfonico-101-ayreon-29-10-19/5425992/">10.739: Rock sinfónico 101: Ayreon</a></li>
+<li data-year="2019" data-month="11"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10754-rock-sinfonico-102-lost-world-band-11-11-19/5440715/">10.754: Rock sinfónico 102 Lost World Band</a></li>
+<li data-year="2019" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10780-rock-sinfonico-103-the-later-pink-floyd-05-12-19/5460445/">10.780: Rock Sinfónico 103 The Later Pink Floyd</a></li>
+<li data-year="2019" data-month="12"><a href="http://www.rtve.eshttp://www.rtve.es/play/audios/discopolis/discopolis-10794-rock-sinfonico-104-pink-floyd-cofre-17-12-19/5467576/">10.794 Rock sinfónico 104, Pink Floyd cofre</a></li>
+<li data-year="2020" data-month="10"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-11105-rock-sinfonico-105-bernard-porsti-king-crimson-14-10-20/5683272/">11.105: Rock Sinfónico 105: Bernard & Porsti, King Crimson</a></li>
+<li data-year="2020" data-month="10"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-11106-rock-sinfonico-106-crimson-saucerful-of-secrets-15-10-20/5684222/">11.106: Rock Sinfónico 106: K.Crimson,A Saucerful of Secrets</a></li>
+<li data-year="2020" data-month="10"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-11107-rock-sinfonico-107-qamar-saucerful-of-secrets-16-10-20/5686042/">11.107: Rock Sinfónico 107: Qamar, A Saucerful of Secrets</a></li>
+<li data-year="2020" data-month="10"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-11112-rock-sinfonico-108-kansas-krieger-21-10-20/5689342/">11.112: Rock Sinfónico 108: Kansas - R. Krieger</a></li>
+<li data-year="2020" data-month="10"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-11117-rock-sinfonico-110-ozric-tentacles-lonely-robot-26-10-20/5694511/">11.117: Rock Sinfónico 110: Ozric Tentacles, Lonely Robot</a></li>
+<li data-year="2020" data-month="10"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-11118-rock-sinfonico-111-pymlico-otentacles-showe-27-10-20/5695099/">11.118: Rock Sinfónico 111: Pymlico, O.Tentacles, S.Howe</a></li>
+<li data-year="2020" data-month="10"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/discopolis-11119-rock-sinfonico-112-pineapple-thief-millenium-28-10-20/5696281/">11.119: Rock Sinfónico 112: Pineapple Thief, Millenium</a></li>
+<li data-year="2020" data-month="11"><a href="http://www.rtve.eshttps://www.rtve.es/play/audios/discopolis/11132-rock-sinfonico-113-dukes-orient-esabuc-10-11-20/5709360/">11.132: Rock Sinfónico 113 Dukes Orient, Esabuc</a></li>
+</ul>
+
+<script>
+function filterEpisodes() {
+    var year = document.getElementById('year').value;
+    var month = document.getElementById('month').value;
+    var episodes = document.getElementById('episodeList').getElementsByTagName('li');
+    for (var i = 0; i < episodes.length; i++) {
+        var episodeYear = episodes[i].getAttribute('data-year');
+        var episodeMonth = episodes[i].getAttribute('data-month');
+        if ((year === 'all' || episodeYear === year) && (month === 'all' || episodeMonth === month)) {
+            episodes[i].style.display = '';
+        } else {
+            episodes[i].style.display = 'none';
+        }
+    }
+}
+</script>
+</body>
+</html>
