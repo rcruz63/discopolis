@@ -56,7 +56,7 @@ def frecuencia(name):
     reserved_words = set(["rock", "pop"])
 
     # Cargar datos
-    file_path = f'./{name}_all.csv'
+    file_path = f'./files/{name}_all.csv'
     df = load_data(file_path)
 
     # Contar palabras en títulos

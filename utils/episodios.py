@@ -7,6 +7,7 @@ from utils.escribir import escribir_csv, escribir_html
 
 
 def obtener_episodios_por_mes(base_url, year, month, literal=None):
+    # print(year, " - ", month, " - pag 1")
     episodios_temp = []
     page_number = 1
     while True:
@@ -24,12 +25,20 @@ def obtener_episodios_por_mes(base_url, year, month, literal=None):
         if not found:
             break
         page_number += 1
+        # print(year, " - ", month, " - pag ", page_number)
     episodios_temp.reverse()
     return episodios_temp
 
 
-def obtener_episodios(base_url, literal, start_year=2012, end_year=2024):
+def obtener_episodios(programa, literal, start_year=None, end_year=2024):
+    base_url = programa["base_url"]
     episodios = []
+    if not start_year:
+        start_year = programa["year"]
+        for month in range((programa["month"] - 1), 12):
+            episodios.extend(obtener_episodios_por_mes(base_url, start_year, month, literal))
+        start_year += 1
+
     literal_canonico = re.sub(r'\W+', '_', unidecode.unidecode(literal.strip().lower()))
 
     for year in range(start_year, end_year):
@@ -38,20 +47,29 @@ def obtener_episodios(base_url, literal, start_year=2012, end_year=2024):
     return episodios, literal_canonico
 
 
-def obtener_all_episodios(base_url, start_year=2012, end_year=2024):
+def obtener_all_episodios(programa, start_year=None, end_year=2024):
+    base_url = programa["base_url"]
     episodios = []
+    if not start_year:
+        start_year = programa["year"]
+        for month in range((programa["month"] - 1), 12):
+            episodios.extend(obtener_episodios_por_mes(base_url, start_year, month))
+        start_year += 1
     literal_canonico = "all"
 
     for year in range(start_year, end_year):
+        print("Year:", year)
         for month in range(12):
             episodios.extend(obtener_episodios_por_mes(base_url, year, month))
     return episodios, literal_canonico
 
 
-def episodios(name, base_url, literal=None):
+def episodios(programa, literal=None):
     if literal:
-        episodios, literal_canonico = obtener_episodios(base_url, literal)
+        episodios, literal_canonico = obtener_episodios(programa, literal)
     else:
-        episodios, literal_canonico = obtener_all_episodios(base_url)
-    escribir_csv(name, episodios, literal_canonico)
-    escribir_html(name, episodios, literal_canonico)
+        episodios, literal_canonico = obtener_all_episodios(programa)
+    print("Ha escribir CSV")
+    escribir_csv(programa["name"], episodios, literal_canonico)
+    print("Ha escribir HTML")
+    escribir_html(programa["name"], episodios, literal_canonico)
