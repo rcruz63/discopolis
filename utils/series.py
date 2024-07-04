@@ -63,7 +63,7 @@ def frecuencia(name):
     word_freq = count_words(df['Titulo'], stop_words, reserved_words)
 
     # Guardar resultado en un archivo CSV
-    output_path = f'./frecuencia_palabras_{name}.csv'
+    output_path = f'./files/frecuencia_palabras_{name}.csv'
     df_sorted = save_word_frequency(word_freq, output_path)
 
     print(f"Análisis completado y guardado en 'frecuencia_palabras_{name}.csv'")

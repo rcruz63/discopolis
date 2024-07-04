@@ -2,7 +2,7 @@ import csv
 
 
 def escribir_csv(name, episodios, literal_canonico):
-    with open(f'{name}_{literal_canonico}.csv', 'w', newline='', encoding='utf-8-sig') as file:
+    with open(f'files/{name}_{literal_canonico}.csv', 'w', newline='', encoding='utf-8-sig') as file:
         writer = csv.writer(file, delimiter=';')
         writer.writerow(["Episodio n", "Titulo", "URL", "Año", "Mes"])
         for i, (titulo, url, year, month) in enumerate(episodios, start=1):
@@ -12,7 +12,7 @@ def escribir_csv(name, episodios, literal_canonico):
 
 
 def escribir_html(name, episodios, literal_canonico, start_year=2016, end_year=2024):
-    with open(f'{name}_{literal_canonico}.html', 'w', newline='', encoding='utf-8-sig') as file:
+    with open(f'files/{name}_{literal_canonico}.html', 'w', newline='', encoding='utf-8-sig') as file:
         file.write(f'<html>\n<head>\n<title>Lista de Episodios {name} - {literal_canonico}</title>\n</head>\n<body>\n')
         file.write(f'<h1>Lista de Episodios {name} - {literal_canonico}</h1>\n')
         file.write('<label for="year">Filtrar por año:</label>\n')
