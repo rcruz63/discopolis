@@ -1,0 +1,63 @@
+﻿<html>
+<head>
+<title>Lista de Episodios 6x3 - rompepistas</title>
+</head>
+<body>
+<h1>Lista de Episodios 6x3 - rompepistas</h1>
+<label for="year">Filtrar por año:</label>
+<select id="year" onchange="filterEpisodes()">
+<option value="all">Todos</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+</select>
+<label for="month">Filtrar por mes:</label>
+<select id="month" onchange="filterEpisodes()">
+<option value="all">Todos</option>
+<option value="1">1</option>
+<option value="3">3</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+<ul id="episodeList">
+<li data-year="2014" data-month="5"><a href="http://www.rtve.es/play/audios/6x3/6-3-guitarras-rompepistas-15-05-14/2564756/">Guitarras rompepistas</a></li>
+<li data-year="2014" data-month="8"><a href="http://www.rtve.es/play/audios/6x3/6x3-guitarras-rompepistas-01-08-14/2686087/">Guitarras rompepistas</a></li>
+<li data-year="2014" data-month="12"><a href="http://www.rtve.es/play/audios/6x3/6x3-sesion-rompepistas-19-12-14/2917935/">Sesión rompepistas</a></li>
+<li data-year="2015" data-month="1"><a href="https://www.rtve.es/play/audios/6x3/150123-6x3-rompepistas-2015-01-20t10-07-50667/2957031/">Sesión rompepistas (Pedazo temazo)</a></li>
+<li data-year="2015" data-month="3"><a href="https://www.rtve.es/play/audios/6x3/150306-6x3-sesion-rompepistas-2015-02-16t20-15-26093/3028278/">Sesión rompepistas</a></li>
+<li data-year="2015" data-month="5"><a href="http://www.rtve.es/play/audios/6x3/seis-tres-290515/3146380/">Sesión rompepistas</a></li>
+<li data-year="2015" data-month="6"><a href="http://www.rtve.es/play/audios/6x3/6-3-sesion-rompepistas-26-06-15/3179848/">Sesión rompepistas</a></li>
+<li data-year="2015" data-month="7"><a href="http://www.rtve.es/play/audios/6x3/150724-6x3-rompepistas-julio-2015-07-17t13-28-13880/3219438/">Sesión Rompepistas</a></li>
+<li data-year="2015" data-month="9"><a href="http://www.rtve.es/play/audios/6x3/6-3-sesion-rompepistas-11-09-15/3275739/">Sesión rompepistas</a></li>
+<li data-year="2015" data-month="11"><a href="http://www.rtve.es/play/audios/6x3/6x3-sesion-rompepistas-20-11-15/3370385/">Sesión rompepistas</a></li>
+<li data-year="2016" data-month="1"><a href="http://www.rtve.es/play/audios/6x3/6x3-sesion-rompepistas-15-01-16/3443056/">Sesión rompepistas</a></li>
+<li data-year="2016" data-month="3"><a href="http://www.rtve.es/play/audios/6x3/6x3-sesion-rompepistas-25-03-16/3527371/">Sesión rompepistas</a></li>
+<li data-year="2016" data-month="6"><a href="https://www.rtve.es/play/audios/6x3/6x3-sesion-rompepistas-10-06-16/3625766/">Sesión rompepistas</a></li>
+<li data-year="2016" data-month="7"><a href="https://www.rtve.es/play/audios/6x3/6x3-sesion-rompepistas-08-07-16/3654696/">Sesión rompepistas</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/6x3/6-3-sesion-rompepistas-15-07-16/3659936/">Sesión rompepistas</a></li>
+<li data-year="2016" data-month="7"><a href="http://www.rtve.es/play/audios/6x3/6-3-rompepistas-legendaria-29-07-16/3673018/">Rompepistas legendaria</a></li>
+</ul>
+
+<script>
+function filterEpisodes() {
+    var year = document.getElementById('year').value;
+    var month = document.getElementById('month').value;
+    var episodes = document.getElementById('episodeList').getElementsByTagName('li');
+    for (var i = 0; i < episodes.length; i++) {
+        var episodeYear = episodes[i].getAttribute('data-year');
+        var episodeMonth = episodes[i].getAttribute('data-month');
+        if ((year === 'all' || episodeYear === year) && (month === 'all' || episodeMonth === month)) {
+            episodes[i].style.display = '';
+        } else {
+            episodes[i].style.display = 'none';
+        }
+    }
+}
+</script>
+</body>
+</html>
