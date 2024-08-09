@@ -59,4 +59,4 @@ function filterEpisodes() {
 </script>
 ''')
         file.write('</body>\n</html>')
-    print(f"Archivo HTML generado con éxito: Discopolis_{literal_canonico}.html")
+    print(f"Archivo HTML generado con éxito: {name}_{literal_canonico}.html")
