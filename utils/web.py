@@ -58,6 +58,28 @@ DEFAULT_COLLECTIONS = (
         ),
     },
     {
+        "id": "discopolis-decada-dorada",
+        "title": "Discópolis: Década dorada del Rock",
+        "subtitle": "Monográfico en 10 partes sobre el periodo 1966-1975",
+        "source": "files/Discopolis_decada_dorada.csv",
+        "program": "Discópolis",
+        "description": (
+            "Monográfico de 10 entregas emitido en julio de 2012 dedicado a la década "
+            "dorada del rock (1966-1975)."
+        ),
+    },
+    {
+        "id": "discopolis-rock-sinfonico",
+        "title": "Discópolis: Rock Sinfónico",
+        "subtitle": "Extensa serie dedicada al rock sinfónico y progresivo",
+        "source": "files/Discopolis_rock_sinfonico.csv",
+        "program": "Discópolis",
+        "description": (
+            "Serie de más de 150 entregas conducida por José Miguel López repasando "
+            "grandes bandas y discos del rock sinfónico y progresivo (Pink Floyd, King Crimson, Yes, etc.)."
+        ),
+    },
+    {
         "id": "6x3",
         "title": "6x3",
         "subtitle": "Archivo completo del programa de Radio 3 dedicado a la guitarra",
