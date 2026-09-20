@@ -36,12 +36,42 @@ DEFAULT_COLLECTIONS = (
         ),
     },
     {
+        "id": "discopolis-1970",
+        "title": "Discópolis: 1970",
+        "subtitle": "Serie monográfica sobre discos y artistas de 1970",
+        "source": "files/Discopolis_1970.csv",
+        "program": "Discópolis",
+        "description": (
+            "Serie de Discópolis dedicada al año 1970, con entregas ordenadas para "
+            "seguir el recorrido completo."
+        ),
+    },
+    {
         "id": "6x3",
         "title": "6x3",
         "subtitle": "Archivo completo del programa de Radio 3 dedicado a la guitarra",
         "source": "files/6x3_all.csv",
         "program": "6x3",
         "description": "Programa de Radio 3 dedicado a las seis cuerdas y sus protagonistas.",
+    },
+    {
+        "id": "6x3-rompepistas",
+        "title": "6x3: Rompepistas",
+        "subtitle": "Selección de sesiones rompepistas del archivo 6x3",
+        "source": "files/6x3_rompepistas.csv",
+        "program": "6x3",
+        "description": "Sesiones rompepistas de 6x3 agrupadas como serie independiente.",
+    },
+    {
+        "id": "musica-y-significado",
+        "title": "Música y significado",
+        "subtitle": "Archivo completo del programa Música y significado",
+        "source": "files/Musica_y_significado_all.csv",
+        "program": "Música y significado",
+        "description": (
+            "Programa de Radio Clásica dedicado a escuchar obras y compositores desde "
+            "su contexto musical y cultural."
+        ),
     },
 )
 
@@ -145,7 +175,8 @@ def load_collection(
             protagonists = extract_protagonists(title)
             episodes.append(
                 {
-                    "id": asset_id or f"{definition['id']}-{index}",
+                    "id": f"{definition['id']}-{asset_id or 'row'}-{index}",
+                    "assetId": asset_id,
                     "order": index,
                     "episode": row.get("Episodio n") or f"Episodio {index}",
                     "title": title,
@@ -361,7 +392,7 @@ def render_index() -> str:
   <header class="hero">
     <p class="eyebrow">RTVE Play / RNE</p>
     <h1>Archivo musical navegable</h1>
-    <p>Discópolis, la serie Setentas y 6x3 ordenados para buscar, filtrar y escuchar en secuencia desde el navegador.</p>
+    <p>Discópolis, 6x3, Música y significado y sus series publicadas, ordenadas para buscar, filtrar y escuchar en secuencia desde el navegador.</p>
   </header>
 
   <main class="layout">
@@ -376,6 +407,10 @@ def render_index() -> str:
         <label>
           Buscar
           <input id="search" type="search" placeholder="artista, título, descripción">
+        </label>
+        <label class="scope-toggle">
+          <input id="globalScope" type="checkbox">
+          Buscar en todo el archivo
         </label>
         <label>
           Año
@@ -496,7 +531,7 @@ body {
 
 .toolbar {
   display: grid;
-  grid-template-columns: minmax(14rem, 1fr) repeat(3, minmax(8rem, 12rem));
+  grid-template-columns: minmax(14rem, 1fr) repeat(4, minmax(8rem, 12rem));
   gap: .75rem;
   align-items: end;
   margin-bottom: 1rem;
@@ -511,6 +546,15 @@ input, select {
   color: var(--text);
   background: #111318;
 }
+.scope-toggle {
+  display: flex;
+  align-items: center;
+  gap: .55rem;
+  align-self: end;
+  min-height: 2.8rem;
+}
+.scope-toggle input { width: auto; }
+
 
 .summary { color: var(--muted); margin: .5rem 0 1rem; }
 .episodes { list-style: none; margin: 0; padding: 0; display: grid; gap: .75rem; }
@@ -600,6 +644,8 @@ const state = {
   collection: null,
   filtered: [],
   currentId: null,
+  allEpisodes: [],
+  collectionTitles: new Map(),
   visibleLimit: PAGE_SIZE,
 };
 
@@ -609,6 +655,7 @@ const els = {
   search: document.querySelector('#search'),
   year: document.querySelector('#yearFilter'),
   month: document.querySelector('#monthFilter'),
+  globalScope: document.querySelector('#globalScope'),
   protagonist: document.querySelector('#protagonistFilter'),
   summary: document.querySelector('#summary'),
   episodes: document.querySelector('#episodes'),
@@ -629,6 +676,8 @@ async function init() {
   const response = await fetch('data/catalog.json');
   state.catalog = await response.json();
   state.collection = state.catalog.collections[0];
+  state.allEpisodes = state.catalog.collections.flatMap((collection) => collection.episodes);
+  state.collectionTitles = new Map(state.catalog.collections.map((collection) => [collection.id, collection.title]));
   renderCollections();
   renderFilters();
   applyFilters();
@@ -638,6 +687,11 @@ async function init() {
 function bindEvents() {
   [els.search, els.year, els.month, els.protagonist].forEach((element) => {
     element.addEventListener('input', applyFilters);
+  });
+  els.globalScope.addEventListener('change', () => {
+    state.currentId = null;
+    renderFilters();
+    applyFilters();
   });
   els.audio.addEventListener('ended', playNext);
   els.next.addEventListener('click', playNext);
@@ -658,6 +712,7 @@ function renderCollections() {
       state.currentId = null;
       state.visibleLimit = PAGE_SIZE;
       els.search.value = '';
+      els.globalScope.checked = false;
       renderCollections();
       renderFilters();
       applyFilters();
@@ -667,26 +722,32 @@ function renderCollections() {
 }
 
 function renderFilters() {
-  const years = unique(state.collection.episodes.map((episode) => episode.year).filter(Boolean));
+  const episodes = activeEpisodes();
+  const years = unique(episodes.map((episode) => episode.year).filter(Boolean));
   fillSelect(els.year, 'Todos', years.map((year) => [year, year]));
 
-  const months = unique(state.collection.episodes.map((episode) => episode.month).filter(Boolean));
+  const months = unique(episodes.map((episode) => episode.month).filter(Boolean));
   fillSelect(
     els.month,
     'Todos',
     months.map((month) => [month, monthNames.format(new Date(2020, month - 1, 1))])
   );
 
-  const protagonists = unique(state.collection.episodes.flatMap((episode) => episode.protagonists || []));
+  const protagonists = unique(episodes.flatMap((episode) => episode.protagonists || []));
   fillSelect(els.protagonist, 'Todos', protagonists.map((name) => [name, name]));
 
-  const tags = state.collection.stats.topProtagonists.slice(0, 12)
+  const stats = isGlobalScope() ? computeStats(episodes) : state.collection.stats;
+  const title = isGlobalScope() ? 'Todo el archivo' : state.collection.title;
+  const description = isGlobalScope()
+    ? `Búsqueda combinada en ${state.catalog.collections.length} colecciones publicadas.`
+    : state.collection.description;
+  const tags = stats.topProtagonists.slice(0, 12)
     .map((item) => `<span class="tag">${escapeHtml(item.name)} · ${item.count}</span>`)
     .join('');
   els.stats.innerHTML = `
-    <h2>${escapeHtml(state.collection.title)}</h2>
-    <p>${escapeHtml(state.collection.description)}</p>
-    <p><strong>${state.collection.stats.episodes}</strong> episodios · ${years[0] || ''}${years.length > 1 ? `–${years.at(-1)}` : ''}</p>
+    <h2>${escapeHtml(title)}</h2>
+    <p>${escapeHtml(description)}</p>
+    <p><strong>${stats.episodes}</strong> episodios · ${years[0] || ''}${years.length > 1 ? `–${years.at(-1)}` : ''}</p>
     <div class="tag-list">${tags}</div>
   `;
 }
@@ -697,11 +758,12 @@ function applyFilters() {
   const month = els.month.value;
   const protagonist = els.protagonist.value;
 
-  state.filtered = state.collection.episodes.filter((episode) => {
+  state.filtered = activeEpisodes().filter((episode) => {
     const searchable = normalize([
       episode.title,
       episode.description,
       episode.program,
+      collectionTitle(episode),
       ...(episode.protagonists || []),
     ].join(' '));
     return (!query || searchable.includes(query))
@@ -730,6 +792,7 @@ function renderEpisodes() {
           <span>${escapeHtml(formatDate(episode))}</span>
           ${episode.duration ? `<span>${escapeHtml(formatDuration(episode.duration))}</span>` : ''}
           ${(episode.protagonists || []).length ? `<span>${escapeHtml(episode.protagonists.join(' · '))}</span>` : ''}
+          ${isGlobalScope() ? `<span>${escapeHtml(collectionTitle(episode))}</span>` : ''}
         </div>
         ${episode.description ? `<p class="description">${escapeHtml(episode.description)}</p>` : ''}
         <div class="links">
@@ -761,7 +824,7 @@ function playEpisode(episode) {
   els.audio.src = episode.audioUrl;
   els.audio.play();
   els.nowTitle.textContent = episode.title;
-  els.nowMeta.textContent = `${state.collection.title} · ${formatDate(episode)}`;
+  els.nowMeta.textContent = `${collectionTitle(episode)} · ${formatDate(episode)}`;
   els.rtveLink.href = episode.url;
   renderEpisodes();
 }
@@ -778,6 +841,34 @@ function playPrevious() {
   playEpisode(state.filtered[index - 1] || state.filtered.at(-1));
 }
 
+
+function isGlobalScope() {
+  return els.globalScope.checked;
+}
+
+function activeEpisodes() {
+  return isGlobalScope() ? state.allEpisodes : state.collection.episodes;
+}
+
+function collectionTitle(episode) {
+  return state.collectionTitles.get(episode.collection) || episode.program || '';
+}
+
+function computeStats(episodes) {
+  const protagonistCounts = new Map();
+  episodes.forEach((episode) => {
+    (episode.protagonists || []).forEach((name) => {
+      protagonistCounts.set(name, (protagonistCounts.get(name) || 0) + 1);
+    });
+  });
+  return {
+    episodes: episodes.length,
+    topProtagonists: [...protagonistCounts.entries()]
+      .sort(([leftName, leftCount], [rightName, rightCount]) => rightCount - leftCount || leftName.localeCompare(rightName, 'es'))
+      .slice(0, 30)
+      .map(([name, count]) => ({ name, count })),
+  };
+}
 function fillSelect(select, label, options) {
   select.innerHTML = `<option value="">${label}</option>`;
   options.forEach(([value, text]) => {
