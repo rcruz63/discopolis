@@ -82,6 +82,6 @@ python rne3.py discopolis rock
 - **No linting, testing, or build commands**: This is a utility script without formal test suite or CI/CD
 - **RTVE API dependency**: All scraping depends on RTVE website structure; HTML class selectors (`elem_`, `maintitle`, `goto_media`) are fragile
 - **Encoding matters**: CSV uses `'utf-8-sig'` encoding with semicolon delimiter; HTML uses UTF-8-sig for compatibility with Excel on Windows
-- **Year range limitation**: Scraping covers 2024 as hardcoded end year in `obtener_episodios()` and `obtener_all_episodios()`
+- **Year range limitation**: Scraping dynamically defaults to `datetime.now().year + 1` in `obtener_episodios()` and `obtener_all_episodios()`
 - **Search term filtering**: Applied per-month during scrape, not post-processing (more efficient than filtering after fetch)
 - **Commented feature**: Word frequency analysis is partially commented out in the main flow; see `episodios()` function in `utils/episodios.py`

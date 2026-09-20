@@ -23,6 +23,12 @@ constantes_programas = {
         "base_url": "https://www.rtve.es/play/audios/moduloRadio/40382/emisiones",
         "month": 3,
         "year": 2010
+    },
+    "arbol": {
+        "name": "El_arbol_de_la_musica",
+        "base_url": "https://www.rtve.es/play/audios/moduloRadio/119930/emisiones",
+        "month": 10,
+        "year": 2018
     }
 }
 

@@ -1,8 +1,8 @@
+from datetime import datetime
+import re
 import requests
 from bs4 import BeautifulSoup
 import unidecode
-import re
-
 from utils.escribir import escribir_csv, escribir_html
 
 
@@ -30,8 +30,10 @@ def obtener_episodios_por_mes(base_url, year, month, literal=None):
     return episodios_temp
 
 
-def obtener_episodios(programa, literal, start_year=None, end_year=2024):
+def obtener_episodios(programa, literal, start_year=None, end_year=None):
     base_url = programa["base_url"]
+    if end_year is None:
+        end_year = datetime.now().year + 1
     episodios = []
     if not start_year:
         start_year = programa["year"]
@@ -47,8 +49,10 @@ def obtener_episodios(programa, literal, start_year=None, end_year=2024):
     return episodios, literal_canonico
 
 
-def obtener_all_episodios(programa, start_year=None, end_year=2024):
+def obtener_all_episodios(programa, start_year=None, end_year=None):
     base_url = programa["base_url"]
+    if end_year is None:
+        end_year = datetime.now().year + 1
     episodios = []
     if not start_year:
         start_year = programa["year"]
