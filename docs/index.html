@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Archivo RNE personal</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">RTVE Play / RNE</p>
+    <h1>Archivo musical navegable</h1>
+    <p>Discópolis, la serie Setentas y 6x3 ordenados para buscar, filtrar y escuchar en secuencia desde el navegador.</p>
+  </header>
+
+  <main class="layout">
+    <aside class="panel sidebar">
+      <h2>Vistas</h2>
+      <nav id="collections" class="collections" aria-label="Colecciones"></nav>
+      <section class="stats" id="stats"></section>
+    </aside>
+
+    <section class="panel content">
+      <div class="toolbar">
+        <label>
+          Buscar
+          <input id="search" type="search" placeholder="artista, título, descripción">
+        </label>
+        <label>
+          Año
+          <select id="yearFilter"></select>
+        </label>
+        <label>
+          Mes
+          <select id="monthFilter"></select>
+        </label>
+        <label>
+          Protagonista
+          <select id="protagonistFilter"></select>
+        </label>
+      </div>
+      <div id="summary" class="summary"></div>
+      <ol id="episodes" class="episodes"></ol>
+      <button id="loadMore" class="load-more" type="button">Ver más episodios</button>
+    </section>
+  </main>
+
+  <footer class="player" aria-live="polite">
+    <div class="now-playing">
+      <strong id="nowTitle">Selecciona un episodio</strong>
+      <span id="nowMeta">El reproductor avanzará al siguiente resultado visible.</span>
+    </div>
+    <audio id="audio" controls preload="none"></audio>
+    <div class="player-actions">
+      <button id="previous" type="button">Anterior</button>
+      <button id="next" type="button">Siguiente</button>
+      <a id="rtveLink" href="https://www.rtve.es/play/radio/" target="_blank" rel="noreferrer">RTVE</a>
+    </div>
+  </footer>
+
+  <script src="assets/app.js" type="module"></script>
+</body>
+</html>

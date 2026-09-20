@@ -2,6 +2,7 @@ import sys
 
 from utils.episodios import episodios
 from utils.series import frecuencia
+from utils.web import generar_sitio
 
 # Definición de constantes para cada programa
 constantes_programas = {
@@ -25,7 +26,27 @@ constantes_programas = {
     }
 }
 
+def generar_web(args):
+    enrich = "--enrich" in args
+    limit = None
+    for index, arg in enumerate(args):
+        if arg == "--limit" and index + 1 < len(args):
+            limit = int(args[index + 1])
+    generar_sitio(enrich=enrich, limit=limit)
+
+
+def mostrar_programas():
+    print("Programas disponibles:")
+    for clave, programa in constantes_programas.items():
+        print(f"Clave: {clave}, Nombre: {programa['name']}")
+    print("Clave: site, Nombre: Web estática GitHub Pages")
+
+
 if __name__ == "__main__":
+    if len(sys.argv) >= 2 and sys.argv[1].lower() in {"site", "web", "pages"}:
+        generar_web(sys.argv[2:])
+        sys.exit(0)
+
     if len(sys.argv) == 3:
         programa = sys.argv[1]
         if programa.lower() in constantes_programas:
@@ -44,9 +65,7 @@ if __name__ == "__main__":
         else:
             sys.exit("Programa no reconocido")
     elif len(sys.argv) == 1:
-        print("Programas disponibles:")
-        for clave, programa in constantes_programas.items():
-            print(f"Clave: {clave}, Nombre: {programa['name']}")
+        mostrar_programas()
 
     else:
         sys.exit("Número incorrecto de parámetros")
