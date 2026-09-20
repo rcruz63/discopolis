@@ -36,6 +36,17 @@ DEFAULT_COLLECTIONS = (
         ),
     },
     {
+        "id": "discopolis-sesenta",
+        "title": "Discópolis: Los sesenta",
+        "subtitle": "Serie monográfica sobre la década de los sesenta y Woodstock",
+        "source": "files/Discopolis_sesenta.csv",
+        "program": "Discópolis",
+        "description": (
+            "Serie de Discópolis emitida en 2016 ('Los sesenta de verdad' y especial Woodstock), "
+            "ordenada cronológicamente para escuchar en secuencia."
+        ),
+    },
+    {
         "id": "discopolis-1970",
         "title": "Discópolis: 1970",
         "subtitle": "Serie monográfica sobre discos y artistas de 1970",
