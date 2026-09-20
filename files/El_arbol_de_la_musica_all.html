@@ -1,0 +1,427 @@
+﻿<html>
+<head>
+<title>Lista de Episodios El_arbol_de_la_musica - all</title>
+</head>
+<body>
+<h1>Lista de Episodios El_arbol_de_la_musica - all</h1>
+<label for="year">Filtrar por año:</label>
+<select id="year" onchange="filterEpisodes()">
+<option value="all">Todos</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+<option value="2026">2026</option>
+</select>
+<label for="month">Filtrar por mes:</label>
+<select id="month" onchange="filterEpisodes()">
+<option value="all">Todos</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+<ul id="episodeList">
+<li data-year="2018" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-sube-arbol-musica-07-10-18/4780051/">Sube a El árbol de la música</a></li>
+<li data-year="2018" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-14-10-18/4790680/">El árbol de la música - 14/10/18</a></li>
+<li data-year="2018" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-habichuelas-magicas-21-10-18/4803922/">Las habichuelas mágicas</a></li>
+<li data-year="2018" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-peluca-haendel-28-10-18/4814658/">La peluca de Haendel</a></li>
+<li data-year="2018" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-alicia-pais-musica-maravillosa-04-11-18/4824278/">Alicia en el país de la música maravillosa</a></li>
+<li data-year="2018" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-nino-del-agua-11-11-18/4834717/">El niño del agua</a></li>
+<li data-year="2018" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-tres-cerditos-lobo-feroz-18-11-18/4845606/">Los tres cerditos y el lobo feroz</a></li>
+<li data-year="2018" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-timbal-dolia-cabeza-25-11-18/4857322/">El timbal al que le dolía la cabeza</a></li>
+<li data-year="2018" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-antonio-violin-perdido-02-12-18/4868869/">Antonio y el violín perdido</a></li>
+<li data-year="2018" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-galaxia-muy-muy-lejana-09-12-18/4881138/">En una galaxia muy muy lejana...</a></li>
+<li data-year="2018" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-cuento-navidad-23-12-18/4907659/">Cuento de Navidad</a></li>
+<li data-year="2018" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-maquina-del-tiempo-30-12-18/4917181/">La máquina del tiempo</a></li>
+<li data-year="2019" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-reyes-despistaos-06-01-19/4926859/">Los Reyes Despistaos</a></li>
+<li data-year="2019" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-castillo-tenebroso-13-01-19/4937007/">El Castillo Tenebroso</a></li>
+<li data-year="2019" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-cuento-para-ninos-jazz-20-01-19/4945307/">¿Cuento para niños de jazz???</a></li>
+<li data-year="2019" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-cenicienta-27-01-19/4953899/">La Cenicienta</a></li>
+<li data-year="2019" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-ali-baba-cuarenta-percusionistas-03-02-19/4966134/">Alí Babá y los cuarenta percusionistas</a></li>
+<li data-year="2019" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-piano-no-gustaba-musica-10-02-19/4977898/">El piano al que no le gustaba la música</a></li>
+<li data-year="2019" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-sastrecillo-valiente-17-02-19/4994419/">El sastrecillo valiente</a></li>
+<li data-year="2019" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-dia-nacio-musica-24-02-19/5010763/">El día que nació la música</a></li>
+<li data-year="2019" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-aprendiz-brujo-03-03-19/5030018/">El aprendiz de brujo</a></li>
+<li data-year="2019" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-flauta-magica-10-03-19/5048159/">La Flauta Mágica</a></li>
+<li data-year="2019" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-musica-del-emperador-17-03-19/5069738/">La música del Emperador</a></li>
+<li data-year="2019" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-hansel-gretel-24-03-19/5086679/">Hansel y Gretel</a></li>
+<li data-year="2019" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-aventuras-del-pirata-henry-purcell-31-03-19/5107519/">Las aventuras del pirata Henry Purcell</a></li>
+<li data-year="2019" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-rey-arturo-caballeros-capella-07-04-19/5125158/">El rey Arturo y los caballeros a capella</a></li>
+<li data-year="2019" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-tres-princesas-lobo-feroz-14-04-19/5141689/">Las tres princesas y el lobo feroz</a></li>
+<li data-year="2019" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-banqueta-rossini-21-04-19/5157271/">La banqueta de Rossini</a></li>
+<li data-year="2019" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-llamale-arpicordio-lautado-yo-llamare-ladron-28-04-19/5169218/">Llámale arpicordio lautado y yo te llamaré ladrón</a></li>
+<li data-year="2019" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-cigarra-hormigas-05-05-19/5182302/">La cigarra y las hormigas</a></li>
+<li data-year="2019" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-caracola-magica-12-05-19/5198240/">La Caracola mágica</a></li>
+<li data-year="2019" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-coppelia-19-05-19/5223738/">Coppelia</a></li>
+<li data-year="2019" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-crispin-secreto-misterioso-26-05-19/5241002/">Crispín y el secreto misterioso</a></li>
+<li data-year="2019" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-musicos-bremen-02-06-19/5255798/">Los músicos de Bremen</a></li>
+<li data-year="2019" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-lisa-ogro-09-06-19/5269498/">Lisa y el ogro</a></li>
+<li data-year="2019" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-alicia-traves-del-espejo-16-06-19/5282681/">Alicia a través del espejo</a></li>
+<li data-year="2019" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-sueno-noche-verano-23-06-19/5293044/">El sueño de una noche de verano</a></li>
+<li data-year="2019" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-cuento-no-se-acaba-30-06-19/5307638/">El cuento que no se acaba</a></li>
+<li data-year="2019" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-venecia-maravilla-tu-musica-castana-06-10-19/5402816/">Venecia es una maravilla y tu música una castaña</a></li>
+<li data-year="2019" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/venecia-maravilla-tu-musica-castana-06-10-19/5410458/">Venecia es una maravilla y tu música una castaña</a></li>
+<li data-year="2019" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-caperucita-roja-13-10-19/5408920/">Caperucita roja</a></li>
+<li data-year="2019" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/caperucita-roja-13-10-19/5410428/">Caperucita Roja</a></li>
+<li data-year="2019" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-nina-sin-nombre-20-10-19/5416480/">La niña sin nombre</a></li>
+<li data-year="2019" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/nina-sin-nombre-20-10-19/5418338/">La niña sin nombre</a></li>
+<li data-year="2019" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-gato-botas-27-10-19/5423983/">El gato con botas</a></li>
+<li data-year="2019" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/gato-botas-27-11-19/5424672/">El gato con botas</a></li>
+<li data-year="2019" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-robin-hood-03-11-19/5432486/">Robin Hood</a></li>
+<li data-year="2019" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/robin-hood-03-11-19/5434147/">Robin Hood</a></li>
+<li data-year="2019" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-blancanieves-10-11-19/5439835/">Blancanieves</a></li>
+<li data-year="2019" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-buscando-musica-17-11-19/5446394/">Buscando música</a></li>
+<li data-year="2019" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/buscando-musica/5448356/">Buscando música</a></li>
+<li data-year="2019" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-dragones-musica-24-11-19/5452025/">Dragones y música</a></li>
+<li data-year="2019" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/dragones-musicas/5452517/">Dragones y músicas</a></li>
+<li data-year="2019" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-pinocho-01-12-19/5457052/">Pinocho</a></li>
+<li data-year="2019" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/pinocho/5457544/">Pinocho</a></li>
+<li data-year="2019" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-nikolai-08-12-19/5461656/">Nikolai</a></li>
+<li data-year="2019" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/nikolai/5462885/">Nikolai</a></li>
+<li data-year="2019" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-serio-ya-navidad-22-12-19/5471209/">¿En serio que ya es Navidad?</a></li>
+<li data-year="2019" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-serio-ya-navidad-22-01-20/5482760/">¿En serio que ya es Navidad?</a></li>
+<li data-year="2019" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-se-acabo-29-12-19/5474307/">¡Y se acabó!</a></li>
+<li data-year="2019" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-se-acabo-29-12-19/5482736/">¡Y se acabó!</a></li>
+<li data-year="2020" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-queridos-reyes-magos-05-01-20/5477643/">Queridos Reyes Magos</a></li>
+<li data-year="2020" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-queridos-reyes-magos-05-01-20/5482716/">Queridos Reyes Magos</a></li>
+<li data-year="2020" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-principe-rodolfo-princesa-teresa-dragon-ernesto-ellos-les-paso-12-01-20/5481955/">El príncipe Rodolfo, la princesa Teresa,¿</a></li>
+<li data-year="2020" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-principe-rodolfo-princesa-teresa-dragon-ernesto-ellos-les-paso-12-01-20/5482728/">El príncipe Rodolfo, la princesa Teresa, el dragón Ernesto..</a></li>
+<li data-year="2020" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-guitarra-ratones-19-01-20/5487238/">La guitarra y los ratones</a></li>
+<li data-year="2020" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-guitarra-ratones-19-01-20-escuchar-ahora/5487904/">La guitarra y los ratones</a></li>
+<li data-year="2020" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-lonnegan-pommodoro-cuento-jazz-26-01-20/5493065/">Lonnegan y Pommodoro. Un cuento de jazz</a></li>
+<li data-year="2020" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-lonnegan-pommodoro-cuento-jazz-26-01-20/5493781/">Lonnegan y Pommodoro. Un cuento de jazz</a></li>
+<li data-year="2020" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-senor-musicas-02-02-20/5499765/">El señor de las músicas</a></li>
+<li data-year="2020" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-edu-020220-2020-02-04t10-02-54487/5501724/">El señor de las músicas</a></li>
+<li data-year="2020" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-flautista-hamelin-ratas-melomanas-09-02-20/5506609/">El flautista de Hamelin y las ratas melómanas</a></li>
+<li data-year="2020" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-flautista-hamelin-ratas-melomanas-09-02-20/5508590/">El flautista de Hamelin y las ratas melómanas</a></li>
+<li data-year="2020" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-no-has-escuchado-bien-16-02-20/5513640/">NO LO HAS ESCUCHADO BIEN</a></li>
+<li data-year="2020" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/no-has-escuchado-bien-16-02-20/5514474/">No lo has escuchado bien</a></li>
+<li data-year="2020" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/musica-vino-del-espacio-23-02-20/5521598/">La música que vino del espacio</a></li>
+<li data-year="2020" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-musica-vino-del-espacio-23-02-20/5521007/">La música que vino del espacio</a></li>
+<li data-year="2020" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-rapunzel-01-03-20/5527050/">RAPUNZEL</a></li>
+<li data-year="2020" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-pelo-rapunzel-rc/5527530/">El pelo de Rapunzel</a></li>
+<li data-year="2020" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-aventuras-simbad-marino-08-03-20/5533160/">Las aventuras de Simbad el marino</a></li>
+<li data-year="2020" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-aventuras-simbad-marino/5534897/">Las aventuras de Simbad el marino</a></li>
+<li data-year="2020" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-escucha-usted-don-luis-15-03-20/5539513/">"¿ME ESCUCHA USTED, DON LUIS?"</a></li>
+<li data-year="2020" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-blancanieves-rojaflor-05-04-20/5551920/">Blancanieves y Rojaflor</a></li>
+<li data-year="2020" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-blancanieves-rojaflor/5566624/">'Blancanieves y Rojaflor'</a></li>
+<li data-year="2020" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-princesa-del-guisante-12-04-20/5555850/">La princesa del guisante</a></li>
+<li data-year="2020" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-princesa-guisante/5566623/">'La princesa del guisante'</a></li>
+<li data-year="2020" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-1999-leguas-20-dias-19-04-20/5559564/">1999 Leguas en 20 días</a></li>
+<li data-year="2020" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/1990-leguas-20-dias/5566615/">Cuento '1990 leguas en 20 días'</a></li>
+<li data-year="2020" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-lobo-pedro-26-04-20/5564674/">EL LOBO Y PEDRO</a></li>
+<li data-year="2020" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-pedro-lobo/5566614/">'Pedro y el lobo'</a></li>
+<li data-year="2020" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-03-05-20/5567760/">El árbol de la música - 03/05/20</a></li>
+<li data-year="2020" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-para-madres/5570621/">Cuento para las madres</a></li>
+<li data-year="2020" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-vienen-vikingos-10-05-20/5572973/">¡QUE VIENEN LOS VIKINGOS!</a></li>
+<li data-year="2020" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-vikingos/5574722/">'¡Vienen los vikingos!'</a></li>
+<li data-year="2020" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-secreto-magia-17-05-20/5575880/">El secreto de la magia</a></li>
+<li data-year="2020" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-teatro-imaginario-24-05-20/5581475/">El teatro imaginario</a></li>
+<li data-year="2020" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-si-cuento-mitico-mitologia-pero-si-mito-cuento-contabilidad-30-05-20/5585977/">Si un cuento es mítico es mitología, pero si un mito es...</a></li>
+<li data-year="2020" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-teatro-imaginario/5581784/">El teatro imaginario</a></li>
+<li data-year="2020" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-mitologico/5586329/">Si un cuento es mítico es mitología, pero si un mito es cuento es... contabilidad</a></li>
+<li data-year="2020" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-ogros-del-bosque-07-06-20/5590247/">Los ogros del bosque</a></li>
+<li data-year="2020" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-ogros-bosque/5591270/">Los ogros del bosque</a></li>
+<li data-year="2020" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-ratita-presumida-14-06-20/5595880/">La ratita presumida</a></li>
+<li data-year="2020" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-ratita-presumida/5599632/">La ratita presumida</a></li>
+<li data-year="2020" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-poder-musica-21-06-20/5603552/">EL PODER DE LA MÚSICA</a></li>
+<li data-year="2020" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuanto-poder-musica/5604319/">El poder de la música</a></li>
+<li data-year="2020" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-cuento-manana-verano-28-06-20/5609618/">El cuento de una mañana de verano</a></li>
+<li data-year="2020" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-manana-verano/5616344/">Cuento de una mañana de verano</a></li>
+<li data-year="2020" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-04-10-20/5676624/">El árbol de la música - 04/10/20</a></li>
+<li data-year="2020" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/hazanas-aventuras-desventuras-del-trovador-luca-strapalucio/5677259/">Las hazañas, aventuras y desventuras del trovador Luca Strapalucio</a></li>
+<li data-year="2020" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-cenicienta-30-11-10-20/5681713/">Cenicienta 3.0</a></li>
+<li data-year="2020" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-cenicienta/5682845/">Cenicienta 3.0</a></li>
+<li data-year="2020" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-jack-ogro-18-10-20/5687014/">Jack el ogro</a></li>
+<li data-year="2020" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-jack-ogro/5687539/">Jack el ogro</a></li>
+<li data-year="2020" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-campos-algodon-cielos-fuego-25-10-20/5693550/">Campos de algodón y cielos de fuego</a></li>
+<li data-year="2020" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/campos-algodon-cielos-fuego/5694402/">Campos de algodón y cielos de fuego</a></li>
+<li data-year="2020" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-menuda-trompa-01-11-20/5701512/">Menuda trompa</a></li>
+<li data-year="2020" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/menuda-trompa/5704119/">Menuda trompa</a></li>
+<li data-year="2020" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/mago-oz-08-11-20/5708043/">El Mago de Oz</a></li>
+<li data-year="2020" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-mago-oz/5709847/">El mago de Oz</a></li>
+<li data-year="2020" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/acuerdate-del-caballo-troya/5714719/">Acuérdate del Caballo de Troya</a></li>
+<li data-year="2020" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/rey-animales-preocupa-musica/5721763/">Al rey de los animales le preocupa la música</a></li>
+<li data-year="2020" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/rey-animales-preocupa-musica/5723237/">Al rey de los animales le preocupa la música</a></li>
+<li data-year="2020" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/caperucita-30-29-11-20/5727153/">Caperucita 3.0</a></li>
+<li data-year="2020" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-caperucita/5727495/">Caperucita 3.0</a></li>
+<li data-year="2020" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/viajes-gulliver/5732702/">Los viajes de Gulliver</a></li>
+<li data-year="2020" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-viajes-gulliver/5734168/">Los viajes de Gulliver</a></li>
+<li data-year="2020" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/ya-queda-menos-13-12-20/5737341/">Ya queda menos</a></li>
+<li data-year="2020" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-hace-dos-dias-navidad-faltan-cinco-para-fin-ano-27-12-20-escuchar-ahora/5746789/">HACE DOS DÍAS DE NAVIDAD Y FALTAN CINCO PARA FIN DE AÑO</a></li>
+<li data-year="2021" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/nosotros-somos-reyes-magos/5750706/">Nosotros somos los Reyes Magos</a></li>
+<li data-year="2021" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/nosotros-somos-reyes-magos/5752249/">Nosotros somos los Reyes Magos</a></li>
+<li data-year="2021" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/rebelion-granja-10-01-21/5756471/">Rebelión en la granja</a></li>
+<li data-year="2021" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/bajo-mar-17-01-21/5763829/">Bajo el mar</a></li>
+<li data-year="2021" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-granja/5775966/">Rebelión en la granja</a></li>
+<li data-year="2021" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-bajo-mar/5767813/">Bajo el mar</a></li>
+<li data-year="2021" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/aladino-lampara-tramposa-24-01-21/5770765/">Aladino y la lámpara tramposa</a></li>
+<li data-year="2021" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-aladino/5771232/">Aladino y la lámpara tramposa</a></li>
+<li data-year="2021" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/lagrimas-nieve-31-01-2021/5777799/">Las lágrimas y la nieve</a></li>
+<li data-year="2021" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-lagrimas-nieve/5778419/">Las lágrimas y la nieve</a></li>
+<li data-year="2021" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/lonnegan-pommodoro-regreso-07-02-21/5785395/">Lonnegan y el Pommodoro: el regreso</a></li>
+<li data-year="2021" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cueto-lonnegan-pommodoro-regreso/5786116/">Lonnegan y el Pommodoro: el regreso</a></li>
+<li data-year="2021" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-amor-14-02-21/5792211/">Cuento de amor</a></li>
+<li data-year="2021" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/siete-cabritillos-21-02-21/5799667/">Los siete cabritillos</a></li>
+<li data-year="2021" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-siete-cabritillos/5800207/">Los siete cabritillos</a></li>
+<li data-year="2021" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/senor-bach-tiene-minuto-28-02-21/5805865/">Señor Bach ¿tiene un minuto?</a></li>
+<li data-year="2021" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-bach-rtvees/5806391/">Señor Bach, ¿tiene un minuto?</a></li>
+<li data-year="2021" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/baron-munchausen-07-03-21/5812309/">El Barón de Munchausen</a></li>
+<li data-year="2021" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-baron-munchausen/5809451/">El Barón de Munchausen</a></li>
+<li data-year="2021" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/tres-hijos-del-rey/5817907/">Los tres hijos del Rey</a></li>
+<li data-year="2021" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/programa-111-21-03-21/5823460/">El programa 111</a></li>
+<li data-year="2021" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-primavera-brujas/5824008/">La fiesta de la primavera y la bruja malvada</a></li>
+<li data-year="2021" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/tanta-tele-mala-28-03-21/5829168/">Tanta tele es mala</a></li>
+<li data-year="2021" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/tanta-tele-no-buena/5826949/">Tanta tele es mala</a></li>
+<li data-year="2021" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/dragon-hombre-grunon-04-04-21/5833591/">El dragón y el hombre gruñón</a></li>
+<li data-year="2021" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/dragon-hombre-grunon/5834005/">El dragón y el hombre gruñón</a></li>
+<li data-year="2021" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/thor-zeus-mercurio/5838871/">Por Thor, por Zeus y por Mercurio</a></li>
+<li data-year="2021" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/thor-zeus-mercurio/5839307/">Por Thor, por Zeus y por Mercurio</a></li>
+<li data-year="2021" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/camisa-del-hombre-feliz-18-04-21/5856931/">La camisa del hombre feliz</a></li>
+<li data-year="2021" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-hombre-feliz/5854352/">La camisa del hombre feliz</a></li>
+<li data-year="2021" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/bella-bestia/5887685/">La bella y la bestia</a></li>
+<li data-year="2021" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-bella-bestia/5874830/">La bella y la bestia</a></li>
+<li data-year="2021" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/hombre-invisible-02-05-21/5893264/">El hombre invisible</a></li>
+<li data-year="2021" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-hombre-invisible/5895548/">El hombre invisible</a></li>
+<li data-year="2021" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/oro-duendes/5898423/">El oro de los duendes</a></li>
+<li data-year="2021" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-oro-duende/5896372/">El oro de los duendes</a></li>
+<li data-year="2021" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-eslavo-16-05-21/5904967/">Un cuento eslavo</a></li>
+<li data-year="2021" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/tom-tunningstone-ciudad-perdida-23-05-21/5913359/">Tom Tunningstone y la ciudad perdida</a></li>
+<li data-year="2021" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-ciudad-perdida/5915621/">'Tom Tunningstone y la ciudad perdida'</a></li>
+<li data-year="2021" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-del-reves-30-05-21/5922364/">El cuento del revés</a></li>
+<li data-year="2021" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-reves/5923338/">El cuento del revés</a></li>
+<li data-year="2021" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/06-06-2021/5930733/">Érase una vez un documental</a></li>
+<li data-year="2021" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-documental/5931645/">Érase una vez un documenta</a></li>
+<li data-year="2021" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/doctor-jekyll-mister-hyde-13-06-21/5940485/">El doctor Jekyll y míster Hyde</a></li>
+<li data-year="2021" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-jekyll-hyde/5948811/">El doctor Jekyll y míster Hyde</a></li>
+<li data-year="2021" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/dinofonia/5947700/">Dinofonía</a></li>
+<li data-year="2021" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/dinofonia/5966537/">Dinofonía</a></li>
+<li data-year="2021" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/colorin-colorado-27-06-21/5959762/">Colorín colorado</a></li>
+<li data-year="2021" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/colorin/5966512/">Colorín colorado</a></li>
+<li data-year="2021" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cartas-correosas-02-10-21/6121815/">Cartas correosas</a></li>
+<li data-year="2021" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/prometo-prometeo/6131781/">Te prometo, Prometeo</a></li>
+<li data-year="2021" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/charlie-fabrica-pianos-16-10-21/6140102/">Charlie y la fábrica de... pianos</a></li>
+<li data-year="2021" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/strapaluccio/6151107/">La música de Lucca Strapaluccio</a></li>
+<li data-year="2021" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/geistmusik/6167531/">Geistmusik (Música fantasmal)</a></li>
+<li data-year="2021" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/blancanieves-30-06-11-21/6185041/">BLANCANIEVES 3.0</a></li>
+<li data-year="2021" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/mago-magia/6203241/">El mago y la magia</a></li>
+<li data-year="2021" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/negocios-lonnegan-pommodoro-20-11-21/6218971/">Los negocios de Lonnegan y Pommodoro</a></li>
+<li data-year="2021" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/zapatillas-rojas-27-11-21/6229075/">Las zapatillas rojas</a></li>
+<li data-year="2021" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/piratas-malasia-04-12-2021/6235642/">Los piratas de la Malasia</a></li>
+<li data-year="2021" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cancion-selva-11-12-21/6243551/">La canción de la selva</a></li>
+<li data-year="2021" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/contrabajo-18-12-21/6252608/">El contrabajo</a></li>
+<li data-year="2021" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cancion-navidad-25-12-21/6262661/">Canción de Navidad</a></li>
+<li data-year="2022" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/asi-termina-navidad-08-01-22/6277258/">Y así termina la Navidad</a></li>
+<li data-year="2022" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/ave-cesar-cantores-et-musici-salutant-15-01-2022/6292420/">Ave Cesar, cantores et musici te salutant</a></li>
+<li data-year="2022" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-vampiros-22-01-22/6310378/">Un cuento de vampiros</a></li>
+<li data-year="2022" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-chino/6332599/">Un cuento chino</a></li>
+<li data-year="2022" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/lobos-siete-caperucitas-05-02-22/6351158/">Los lobos y las siete caperucitas</a></li>
+<li data-year="2022" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/antiguos-nuevos-12-02-2022/6369963/">Los antiguos y los nuevos</a></li>
+<li data-year="2022" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/del-oeste-19-02-22/6380903/">Una del Oeste</a></li>
+<li data-year="2022" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/erase-otra-vez-dagoberto-25-02-22/6394141/">Érase otra vez Dagoberto</a></li>
+<li data-year="2022" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/misterio-del-internado-05-03-22/6414538/">El misterio del internado</a></li>
+<li data-year="2022" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/apuros-mary-poppins-12-03-2022/6434802/">Los apuros de Mary Poppins</a></li>
+<li data-year="2022" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/mago-otro-19-03-22/6453578/">El mago y el otro</a></li>
+<li data-year="2022" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/star-trek-beyond-andromeda-second-turning-at-right/6467773/">Star Trek: Beyond Andromeda, The Second Turning at The Right</a></li>
+<li data-year="2022" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/viajes-ulises-02-04-22/6476656/">Los viajes de Ulises</a></li>
+<li data-year="2022" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/jugamos-jumanji-09-04-22/6484777/">¿Jugamos a Jumanji?</a></li>
+<li data-year="2022" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/maquina-del-tiempo-16-04-22/6491880/">La máquina del tiempo</a></li>
+<li data-year="2022" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cultivando-musica-23-04-22/6504954/">Cultivando música</a></li>
+<li data-year="2022" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/tren-seis-media-30-04-22/6520982/">El tren de las seis y media</a></li>
+<li data-year="2022" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/bella-durmiente-07-05-2022/6530449/">La Bella Durmiente</a></li>
+<li data-year="2022" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/dragon-deseos-14-05-22/6537656/">El dragón de los deseos</a></li>
+<li data-year="2022" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/ciudad-bronce/6544884/">La ciudad de bronce</a></li>
+<li data-year="2022" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/28-05-22/6557398/">Un pique musical</a></li>
+<li data-year="2022" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/buscadora-cuentos-04-06-22/6573980/">La buscadora de cuentos</a></li>
+<li data-year="2022" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/tafelmusik/6623606/">Tafelmusik</a></li>
+<li data-year="2022" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/india-grande-misteriosa/6629412/">La India, qué grande y misteriosa</a></li>
+<li data-year="2022" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/podriamos-repetir-favor-25-06-22/6635102/">¿Podríamos repetir, por favor?</a></li>
+<li data-year="2022" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/si-eres-musico-no-vayas-bremen-01-10-22/6704351/">Si eres músico no vayas a Bremen</a></li>
+<li data-year="2022" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/basilisco-08-10-22/6709484/">El basilisco</a></li>
+<li data-year="2022" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/perdon-no-sera-usted-musa-15-10-22/6714149/">Perdón, ¿no será usted mi musa?</a></li>
+<li data-year="2022" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/princesa-trompeta/6719287/">La princesa y la trompeta</a></li>
+<li data-year="2022" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/calabazas-otros-terrores-29-10-22/6724523/">Calabazas y otros terrores</a></li>
+<li data-year="2022" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/desastre-sastre-05-11-2022/6729318/">Desastre de sastre</a></li>
+<li data-year="2022" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/corchetix-obelisquix-12-11-22/6734580/">Corchetix y Obelisquix</a></li>
+<li data-year="2022" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/lonnegan-pommodoro-vegas/6739845/">Lonnegan y Pommodoro en Las Vegas</a></li>
+<li data-year="2022" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/palacio-hielo-26-11-22/6744919/">El palacio de hielo</a></li>
+<li data-year="2022" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/tesoro-del-dragon-03-12-22/6750109/">El tesoro del dragón</a></li>
+<li data-year="2022" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/lucca-laberinto-10-12-22/6754103/">Lucca en el laberinto</a></li>
+<li data-year="2022" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/contra-viento-mareos-17-12-22/6759129/">Contra viento y mareos</a></li>
+<li data-year="2022" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/hoy-24-manana-25-24-12-22/6763965/">Hoy es 24 y mañana 25</a></li>
+<li data-year="2022" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/orquesta-del-concierto-ano-nuevo/6767415/">La orquesta del Concierto de Año Nuevo</a></li>
+<li data-year="2023" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/se-acaban-ir-ya-estan-vuelta-07-01-23/6771021/">Se acaban de ir y ya están de vuelta</a></li>
+<li data-year="2023" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/organo-encantado/6776077/">El órgano encantado</a></li>
+<li data-year="2023" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/pentagramas-lagrimas-21-01-23/6780652/">Pentagramas y lágrimas</a></li>
+<li data-year="2023" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cenicienta-41/6789681/">Cenicienta 4.1</a></li>
+<li data-year="2023" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/califa-visir-desafinan-04-02-23/6800174/">El califa y el visir desafinan</a></li>
+<li data-year="2023" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/espacio-infinito-mas-11-02-23/6807787/">El espacio es infinito o más</a></li>
+<li data-year="2023" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/no-toques-musica-country-oeste-18-02-23/6814121/">No toques música country en el Oeste</a></li>
+<li data-year="2023" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/hombre-arena/6819976/">El hombre de arena</a></li>
+<li data-year="2023" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/concerto-para-molti-artropodi-04-03-23/6826337/">Concerto para molti artropodi</a></li>
+<li data-year="2023" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-armonia-del-ruido-11-03-23/6832047/">La armonía del ruido</a></li>
+<li data-year="2023" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/llamame-barroco-apolillado-tu-seras-romanticon-llorica-18-03-23/6837281/">Llámame barroco apolillado</a></li>
+<li data-year="2023" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/caldero-magico-25-03-23/6842597/">El caldero mágico</a></li>
+<li data-year="2023" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/no-rias-esto-muy-serio-01-03-23/6848994/">No te rías que esto es muy serio</a></li>
+<li data-year="2023" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/espada-dioses-08-04-23/6857181/">La espada de los dioses</a></li>
+<li data-year="2023" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/sirena-principe/6863833/">La sirena... y el príncipe</a></li>
+<li data-year="2023" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/agente-licencia-para-tocar/6870540/">El agente con licencia para tocar</a></li>
+<li data-year="2023" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/si-esto-viena-usted-debe-ser-johann-strauss-29-04-23/6877812/">Si esto es Viena usted debe ser Johann Strauss</a></li>
+<li data-year="2023" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/tout-pour-musique-et-musique-pour-tous/6883609/">Tout pour la musique et la musique pour tous</a></li>
+<li data-year="2023" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/nunca-llueve-gusto-todos-13-05-23/6889641/">Nunca llueve a gusto de todos</a></li>
+<li data-year="2023" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/unos-dias-mas-adios-cole-20-05-23/6894946/">Unos días más y adiós al cole</a></li>
+<li data-year="2023" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/mil-trompas-flautas-trompetas-son-huracan-27-05-23/6900534/">Mil trompas, flautas y trompetas son un huracán</a></li>
+<li data-year="2023" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/esto-seria-epico-si-no-fuera-mitico-03-06-23/6905774/">Esto sería épico si no fuera mítico</a></li>
+<li data-year="2023" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/mandolina/6910947/">La mandolina</a></li>
+<li data-year="2023" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/solo-hay-aguantar-hasta-dia-21-17-06-23/6916134/">Solo hay que aguantar hasta el día 21</a></li>
+<li data-year="2023" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/este-hacen-ciento-noventa-tres/6921248/">Y con este hacen ciento noventa y tres</a></li>
+<li data-year="2023" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/lobo-feroz-siete-cerditos-14-10-23/6989455/">El lobo feroz y Los siete cerditos</a></li>
+<li data-year="2023" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/dragon-ernesto-horticultura-musical/6984502/">El dragón Ernesto y la horticultura musical</a></li>
+<li data-year="2023" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/sherlock-holmes-james-watson/6994602/">Sherlock Holmes y James Watson</a></li>
+<li data-year="2023" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/musica-horno/6999652/">Música al horno</a></li>
+<li data-year="2023" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/ricitos-oro-04-11-23/7004160/">Ricitos de Oro</a></li>
+<li data-year="2023" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/lonnegan-pommodoro-ley-seca-11-11-23/7009003/">Lonnegan y Pommodoro y la ley seca</a></li>
+<li data-year="2023" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/200-18-11-23/7014005/">El 200</a></li>
+<li data-year="2023" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/tres-tiburones-25-11-23/7019738/">Los tres tiburones</a></li>
+<li data-year="2023" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/jason-argonautas/7026248/">Jasón y los argonautas</a></li>
+<li data-year="2023" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/musica-final-no-idioma-universal/7031336/">La Música al final no es idioma universal</a></li>
+<li data-year="2023" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/hoy-23-pasado-manana-no-se-sabe-23-12-23/7043564/">Hoy es 23 y pasado mañana no se sabe</a></li>
+<li data-year="2023" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/burro-flautista/7037373/">El burro flautista</a></li>
+<li data-year="2023" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/prefiere-nuevo-segunda-mano-30-12-23/7047312/">¿Lo prefiere nuevo o de segunda mano?</a></li>
+<li data-year="2024" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/sed-buenos-firmado-06-01-24/7050679/">Sed buenos. Firmado: M, G y B</a></li>
+<li data-year="2024" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-turandot-13-01-24/15914861/">Turandot</a></li>
+<li data-year="2024" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/contrabajo-20-01-24/15925001/">La niña y el contrabajo</a></li>
+<li data-year="2024" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/abordaje-27-01-24/15936953/">¡Al abordaje!</a></li>
+<li data-year="2024" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/lucca-strapaluccio-caos-03-02-24/15954592/">Lucca Strapaluccio y el caos</a></li>
+<li data-year="2024" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/no-dispareis-pianista-10-02-24/15964462/">No disparéis al pianista</a></li>
+<li data-year="2024" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/eranse-blancanieves-aurora-24-02-24/15984400/">Éranse Blancanieves y Aurora</a></li>
+<li data-year="2024" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/no-no-oboe-gigante-17-02-24/15974646/">No, no es un oboe gigante</a></li>
+<li data-year="2024" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/agentes-abuela-09-03-24/16007063/">Los agentes de la ABUELA</a></li>
+<li data-year="2024" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/colores-suenan-02-03-24/15995277/">Esos colores me suenan</a></li>
+<li data-year="2024" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/ludwig-bonaparte-tambien-franz-joseph-23-03-24/16029185/">Ludwig, Bonaparte y también Franz Joseph</a></li>
+<li data-year="2024" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/erase-mas-nuevo-edad-antigua-mas-antiguo-edad-media-30-03-24/16037786/">Érase en lo más nuevo de la Edad Antigua o en lo más antiguo de la Edad Media</a></li>
+<li data-year="2024" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/musica-hadas-16-03-24/16018499/">La música de las hadas</a></li>
+<li data-year="2024" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/extrano-mundo-sinfonias-13-04-24/16058848/">¡Qué extraño el mundo de las sinfonías!</a></li>
+<li data-year="2024" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/hay-dias-mejor-quedarse-cama-06-04-24/16048118/">Hay días que mejor quedarse en la cama</a></li>
+<li data-year="2024" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/banda-bandas-sonoras-20-04-24/16069147/">La banda de las bandas sonoras</a></li>
+<li data-year="2024" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/unicornio-27-04-24/16079562/">El unicornio</a></li>
+<li data-year="2024" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/04-05-24/16088895/">La música matemática</a></li>
+<li data-year="2024" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/11-05-24/16099078/">El pianista y el duende</a></li>
+<li data-year="2024" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/18-05-24/16109074/">Toca el contrabajo y corre</a></li>
+<li data-year="2024" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/25-05-24/16119387/">Ánforas, jarras y otros cacharros</a></li>
+<li data-year="2024" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/01-06-24/16129044/">Si eres un fantasma no desafines</a></li>
+<li data-year="2024" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-noche-doscientos-treinta-tres-mil-08-06-24/16139138/">Noche doscientos treinta y tres de mil una</a></li>
+<li data-year="2024" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/15-06-24/16148948/">La princesa y la magia</a></li>
+<li data-year="2024" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/no-sepa-musica-toque-pandereta-29-06-24/16167943/">El que no sepa música que toque la pandereta</a></li>
+<li data-year="2024" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/22-06-24/16158358/">El árbol de la música - 22/06/24</a></li>
+<li data-year="2024" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/blancanieves-tres-enanitos-inmersion-musical-05-10-24/16275636/">Blancanieves, los tres enanitos y la inmersión musical</a></li>
+<li data-year="2024" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/desconcierto-12-10-24/16285232/">El desconcierto</a></li>
+<li data-year="2024" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/musicomaquia-19-10-24/16294803/">Musicomaquia</a></li>
+<li data-year="2024" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/si-esto-irlanda-tu-eres-haendel-26-10-24/16304467/">Si esto es Irlanda tú eres Haendel</a></li>
+<li data-year="2024" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/princesa-abducida-02-11-24/16313460/">La princesa abducida</a></li>
+<li data-year="2024" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/lucca-strapaluccio-catastrofe-ma-non-troppo-16-11-24/16333622/">Lucca Strapaluccio: catástrofe ma non troppo</a></li>
+<li data-year="2024" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/liszt-triangulo-no-amoroso-09-11-24/16323340/">Liszt y el triángulo no amoroso</a></li>
+<li data-year="2024" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/faldas-gaitas-loco-23-11-24/16343527/">Con faldas y gaitas a lo loco</a></li>
+<li data-year="2024" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/lonnegan-pomodoro-escucha-calla-30-11-24/16353583/">Lonnegan y Pomodoro: Escucha y calla</a></li>
+<li data-year="2024" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/gran-viaje-johnny-duke-poky-tumper-07-12-24/16362683/">El gran viaje de Johnny Duke… y Poky Tumper</a></li>
+<li data-year="2024" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/patito-teo-14-12-24/16372218/">El patito Teo</a></li>
+<li data-year="2024" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/siguiente-navidad-scrooge-21-12-24/16382314/">La siguiente Navidad de Scrooge</a></li>
+<li data-year="2024" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/no-seas-inocente-28-12-24/16388917/">No seas inocente</a></li>
+<li data-year="2025" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/donde-este-estrella-se-quite-gps-04-01-25/16394821/">Donde esté una estrella que se quite el GPS</a></li>
+<li data-year="2025" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/si-tienes-super-problemas-llama-super-heroes-11-01-25/16403162/">Si tienes súper problemas llama a los súper héroes</a></li>
+<li data-year="2025" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/vida-ogro-18-01-25/16412422/">Una vida de ogro</a></li>
+<li data-year="2025" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/henry-pot-misterio-mas-sonoro-25-01-25/16421972/">Henry Pot y el misterio más sonoro</a></li>
+<li data-year="2025" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/viento-barlovento-cuerda-sotavento-01-02-25/16431898/">El viento a barlovento y la cuerda a sotavento</a></li>
+<li data-year="2025" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/pieza-magica-08-02-25/16441416/">La pieza mágica</a></li>
+<li data-year="2025" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/hija-buxtehude-15-02-25/16451589/">La hija de Buxtehude</a></li>
+<li data-year="2025" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/carnosaurios-herbisaurios-humanos-ma-non-troppo-22-02-25/16461657/">Carnosaurios, herbisaurios y humanos… ma non troppo</a></li>
+<li data-year="2025" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/01-03-25/16471865/">Si quieres un cuento no cuentes con descuento</a></li>
+<li data-year="2025" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/podria-ser-peor-si-tuviera-dos-brujas-madrinas-08-03-25/16482436/">Podría ser peor si tuviera dos brujas madrinas</a></li>
+<li data-year="2025" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/ataque-godzilla-15-03-25/16492729/">El ataque de Godzilla</a></li>
+<li data-year="2025" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/tinaja-pandora-22-03-25/16502757/">La tinaja de Pandora</a></li>
+<li data-year="2025" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/lago-encantado-29-03-25/16512687/">El lago encantado</a></li>
+<li data-year="2025" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/nunca-quites-su-casa-dragon-05-04-25/16522515/">Nunca quites su casa a un dragón</a></li>
+<li data-year="2025" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/principe-mendigo-12-04-25/16538393/">El príncipe y el mendigo</a></li>
+<li data-year="2025" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuidado-magia-salpica-19-04-25/16546144/">Cuidado con la magia que salpica</a></li>
+<li data-year="2025" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/si-tienes-miedo-videoconsola-no-consuela-26-04-25/16555830/">Si tienes miedo una videoconsola no te consuela</a></li>
+<li data-year="2025" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/si-yo-no-soy-vivaldi-quien-eres-tu-03-05-25/16564313/">"Si yo no soy Vivaldi ¿quién eres tú?"</a></li>
+<li data-year="2025" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/terricolas-rendios-andante-assai-10-05-25/16574575/">Terrícolas, rendíos andante assai</a></li>
+<li data-year="2025" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/princesa-espiritus-vengadores-17-05-25/16584727/">La princesa de los espíritus vengadores</a></li>
+<li data-year="2025" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/si-yo-soy-mejor-pianista-historia-quien-eres-tu-31-05-25/16604938/">¿Si yo soy el mejor pianista de la Historia quién eres tú?</a></li>
+<li data-year="2025" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/lucca-strapaluccio-galope-molto-vivace-24-05-25/16595087/">Lucca Strapaluccio al galope molto vivace</a></li>
+<li data-year="2025" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/libros-musica-menuda-feria-07-06-25/16615031/">Libros y música. Menuda feria</a></li>
+<li data-year="2025" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/jumanji-retorno-mas-alla-14-06-25/16625098/">Jumanji, el retorno y más allá</a></li>
+<li data-year="2025" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/sofocos-solsticio-verano-21-06-25/16634826/">Los sofocos de un solsticio de verano</a></li>
+<li data-year="2025" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/musica-tan-cristalina-28-06-25/16644187/">Qué música tan cristalina</a></li>
+<li data-year="2025" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/caperucita-feroz-lobo-04-10-25/16756726/">Caperucita Feroz y el lobo</a></li>
+<li data-year="2025" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-cuando-telemann-hizo-flautista-hamelin-11-10-25/16766487/">De cuando Telemann hizo de flautista de Hamelin</a></li>
+<li data-year="2025" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/principe-del-nilo-18-10-25/16776570/">El príncipe del Nilo</a></li>
+<li data-year="2025" data-month="10"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/gran-teatro-se-va-representar-parsifal-wagner-25-10-25/16786348/">En un gran teatro se va representar Parsifal de Wagner</a></li>
+<li data-year="2025" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/si-no-quieres-monstruos-toma-dos-tazas-01-11-25/16797025/">Si no quieres monstruos toma dos tazas</a></li>
+<li data-year="2025" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/si-mas-grande-violin-fijo-va-ser-viola-08-11-25/16807075/">Si es más grande que un violín fijo que va a ser viola</a></li>
+<li data-year="2025" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/dragones-melodias-15-11-25/16816915/">Dragones y melodías</a></li>
+<li data-year="2025" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/feliz-sesenta-cumpleanos-22-11-25/16827039/">Feliz sesenta cumpleaños</a></li>
+<li data-year="2025" data-month="11"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/si-se-voy-casa-29-11-25/16837703/">Si lo sé me voy a casa</a></li>
+<li data-year="2025" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/si-esto-troya-lio-iliada-06-12-25/16848068/">Si esto es Troya ¿por qué el lío de la Ilíada?</a></li>
+<li data-year="2025" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/aunque-seas-tigre-echa-mano-13-12-25/16857361/">Aunque seas un tigre echa una mano</a></li>
+<li data-year="2025" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/primera-navidad-scrooge-20-12-25/16867886/">"La primera Navidad de Scrooge"</a></li>
+<li data-year="2025" data-month="12"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/bromas-salen-desafinadas-27-12-25/16875570/">Las bromas salen desafinadas</a></li>
+<li data-year="2026" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/princesa-musico-10-01-26/16889406/">La princesa y el músico</a></li>
+<li data-year="2026" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/orquesta-no-cabe-zapatos-03-01-26/16881475/">Una orquesta no cabe en los zapatos</a></li>
+<li data-year="2026" data-month="1"><a href="https://www.rtve.es/play/videos/el-arbol-de-la-musica/orquesta-no-cabe-zapatos-grupo-scherzo/16934792/">En vídeo - Una orquesta no cabe en los zapatos</a></li>
+<li data-year="2026" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/remontando-gran-rio-17-01-26/16898586/">Remontando el gran río</a></li>
+<li data-year="2026" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/20000-leguas-viaje-son-demasiadas-leguas-24-01-26/16908425/">"20.000 leguas de viaje son demasiadas leguas"</a></li>
+<li data-year="2026" data-month="1"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/para-este-viaje-trompetillas-boca-cerrada-zapatillas-31-01-26/16918233/">Para este viaje trompetillas, boca cerrada y zapatillas</a></li>
+<li data-year="2026" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/nunca-todo-para-siempre-07-02-26/16927902/">Nunca todo es para siempre</a></li>
+<li data-year="2026" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/como-no-va-haber-amor-si-hay-ballet-14-02-26/16938273/">¿Cómo no va a haber amor si hay ballet?</a></li>
+<li data-year="2026" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/fantastico-coche-21-02-26/16948103/">¡Qué fantástico es el coche!</a></li>
+<li data-year="2026" data-month="2"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/espejo-magico-28-02-26/16958853/">El espejo mágico</a></li>
+<li data-year="2026" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/parte-esta-arte-si-parte-musica-puede-mandarte-otra-parte-07-03-26/16969851/">¿En qué parte está el arte si parte de la música puede mandarte a la otra parte?</a></li>
+<li data-year="2026" data-month="3"><a href="https://www.rtve.es/play/videos/el-arbol-de-la-musica/arco/16971169/">En vídeo - ¿En qué parte está el arte si parte de la música puede mandarte a la otra parte?</a></li>
+<li data-year="2026" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/lonnegan-pommodoro-si-aburres-nunca-llames-tu-tia-14-03-26/16980563/">Lonnegan y Pommodoro. Si te aburres nunca llames a tu tía</a></li>
+<li data-year="2026" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/guerras-clon-son-follon-21-03-26/16991191/">Las guerras clon son un follón</a></li>
+<li data-year="2026" data-month="3"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/veces-ser-ogro-logro-28-03-26/17001851/">A veces ser un ogro es un logro</a></li>
+<li data-year="2026" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/rip-van-winkle-tempo-tiempo-04-04-26/17009543/">RIP Van Winkle, el tempo a tiempo</a></li>
+<li data-year="2026" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/isla-del-tesoro-11-04-26/17019151/">La isla del tesoro</a></li>
+<li data-year="2026" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/arbol-musica-duende-desastre-18-04-26/17030344/">El duende desastre</a></li>
+<li data-year="2026" data-month="4"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/si-tu-no-eres-lobo-quien-soy-yo-25-26/17041098/">Si tú no eres el lobo ¿Quién soy yo?</a></li>
+<li data-year="2026" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/gimnasio-magnesio-importante-suene-02-05-26/17050804/">Gimnasio o magnesio, lo importante es que suene</a></li>
+<li data-year="2026" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/magia-negra-blanca-corchea-semicorchea-09-05-26/17061314/">La magia es negra, blanca, corchea y semicorchea</a></li>
+<li data-year="2026" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/cuento-noche-entre-mil-16-05-26/17071781/">"El cuento de una noche entre mil… una"</a></li>
+<li data-year="2026" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/si-hay-musica-libros-dragones-vamos-acabar-como-yo-diga-30-05-26/17093033/">“Si hay música, libros y dragones vamos a acabar como yo te diga”</a></li>
+<li data-year="2026" data-month="5"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/si-vapor-no-suena-metele-electricidad-23-05-26/17082820/">Si a vapor no suena, métele electricidad</a></li>
+<li data-year="2026" data-month="5"><a href="https://www.rtve.es/play/videos/el-arbol-de-la-musica/si-hay-musica-libros-dragones-vamos-acabar-como-yo-diga/17094221/">En vídeo - “Si hay música, libros y dragones vamos a acabar como yo te diga”</a></li>
+<li data-year="2026" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/stranger-musics-and-ordinary-things-06-06-26/17103840/">Stranger Musics and Ordinary Things</a></li>
+<li data-year="2026" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/letras-pentagramas-otras-cosas-divertidas-13-06-26/17113747/">Letras, pentagramas y otras cosas divertidas</a></li>
+<li data-year="2026" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/si-hoy-primavera-manana-sera-verano-reves-20-06-26/17124414/">Si hoy es primavera mañana será verano o al revés</a></li>
+<li data-year="2026" data-month="6"><a href="https://www.rtve.es/play/audios/el-arbol-de-la-musica/para-acabar-asi-casi-terminamos-27-06-26/17134163/">“Para acabar así casi que terminamos”</a></li>
+</ul>
+
+<script>
+function filterEpisodes() {
+    var year = document.getElementById('year').value;
+    var month = document.getElementById('month').value;
+    var episodes = document.getElementById('episodeList').getElementsByTagName('li');
+    for (var i = 0; i < episodes.length; i++) {
+        var episodeYear = episodes[i].getAttribute('data-year');
+        var episodeMonth = episodes[i].getAttribute('data-month');
+        if ((year === 'all' || episodeYear === year) && (month === 'all' || episodeMonth === month)) {
+            episodes[i].style.display = '';
+        } else {
+            episodes[i].style.display = 'none';
+        }
+    }
+}
+</script>
+</body>
+</html>

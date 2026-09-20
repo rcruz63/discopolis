@@ -73,6 +73,17 @@ DEFAULT_COLLECTIONS = (
             "su contexto musical y cultural."
         ),
     },
+    {
+        "id": "el-arbol-de-la-musica",
+        "title": "El árbol de la música",
+        "subtitle": "Archivo completo del programa de Radio Clásica",
+        "source": "files/El_arbol_de_la_musica_all.csv",
+        "program": "El árbol de la música",
+        "description": (
+            "Programa de Radio Clásica conducido por Eduardo Martínez-Abarca con "
+            "preguntas y reflexiones sobre música e historias fantásticas."
+        ),
+    },
 )
 
 GENERIC_TITLE_WORDS = {
